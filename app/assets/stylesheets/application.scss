@@ -20,7 +20,7 @@
 body {
   position: relative;
   background-color: #1d7673;
-    //secondary color #565893
+    //secondary color #565893 #444681
 }
 
 h1, h2, p {
@@ -47,17 +47,16 @@ a {
   color: #082322;
   font-weight: 600;
   font-size: 280%;
-  margin-bottom: 80px;
   margin-left: -40px;
 }
 
 #sidebar-footer {
   position:absolute;
-  bottom:5px;
+  bottom:52px;
 }
 
 #main {
-  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .rotate {
@@ -79,7 +78,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .wrapper, .row {
-   height: 100%;
+   height: 95%;
    margin-left:0;
    margin-right:0;
 }
@@ -146,14 +145,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   #sidebar,#sidebar a.logo {
     text-align:center;
     margin:0 auto;
-    margin-top:30px;
     font-size:26px;
   }
   #sidebar a.logo {
     font-size:50px;
     height:75px;
     width:75px;
-    margin-bottom:30px;
   }
 }
 
@@ -164,7 +161,6 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 .page-header {
   margin-top: 55px;
-  padding-top: 9px;
   border-top:1px solid #eeeeee;
   font-weight:700;
   text-transform:uppercase;
