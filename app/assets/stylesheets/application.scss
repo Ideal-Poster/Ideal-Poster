@@ -17,67 +17,46 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 body {
-  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #1d7673;
-  padding-bottom: 5px;
-    //secondary color #565893 #444681
 }
 
-h1, h2, p {
-  color: #F5F5F5;
-  font-weight: 100;
+#sidebar-right {
+  position: fixed;
+  top: 40%;
+  right: 0;
 }
 
-i {
-  color: #E5E5E5
+#navbar a.logo {
+  display:block;
+  padding:3px;
+  background-color:#fff;
+  color:#777777;
+  height:40px;
+  width:40px;
+  margin:15px;
+  font-size:26px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:0 0 0;
 }
 
-/* custom template */
-
-html, body {
-   height: 100%;
-   font-family:'Open Sans',arial,sans-serif;
-}
-
-a {
-  color:#222222;
-}
-
-#name {
-  color: #082322;
-  font-weight: 600;
-  font-size: 280%;
-  margin-left: -40px;
-}
-
-#sidebar-footer {
-  position:absolute;
-  bottom:55px;
-}
-
-#main {
-  padding-top: 8px;
-  padding-bottom: -3px;
-  height: 105%;
-}
-
-.rotate {
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
+@media (max-width: 768px) {
+  #sidebar,#sidebar a.logo {
+    text-align:center;
+    margin:0 auto;
+    font-size:26px;
+  }
+  #sidebar a.logo {
+    font-size:50px;
+    height:75px;
+    width:75px;
+  }
 }
 
 .wrapper, .row {
@@ -103,72 +82,6 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     *zoom:1;
 }
 
-.column .padding {
-}
-
-.box {
-  	bottom: 0; /* increase for footer use */
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-size:cover;
-    background-attachment:fixed;
-}
-#sidebar {
-  margin-top: 20px;
-}
-
-#sidebar a.logo {
-  display:block;
-  padding:3px;
-  background-color:#fff;
-  color:#777777;
-  height:40px;
-  width:40px;
-  margin:15px;
-  font-size:26px;
-  font-weight:700;
-  text-align:center;
-  text-decoration:none;
-  text-shadow:0 0 0;
-}
-
-
-#sidebar-right {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-/* center and adjust the sidebar contents on smaller devices */
-@media (max-width: 768px) {
-  #sidebar,#sidebar a.logo {
-    text-align:center;
-    margin:0 auto;
-    font-size:26px;
-  }
-  #sidebar a.logo {
-    font-size:50px;
-    height:75px;
-    width:75px;
-  }
-}
-
-
-
-
-/* bootstrap overrides */
-
-.page-header {
-  margin-top: 50px;
-  border-top:1px solid #eeeeee;
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:2px;
-}
-
-.col-sm-9.full {
-    width: 100%;
+#main {
+  height: 100%;
 }
