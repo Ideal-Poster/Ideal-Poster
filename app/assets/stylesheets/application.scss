@@ -17,71 +17,105 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1d7673;
+html,body{
+	width:100%;
+	height:100%;
+}
+.name {
+  bottom: 110px;
+  left: 20px;
+  font-size: 26px;
 }
 
-#sidebar-right {
-  position: fixed;
-  top: 40%;
+.navigation{
+	position:fixed;
+	z-index:1;
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.nav-left {
+  top:85px;
+}
+
+.navigation li{
+	color:#333333;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	-webkit-transition: all .2s ease-in-out;
+	text-align:left;
+	width:100px;
+}
+
+.nav-right {
+  position:fixed;
   right: 0;
+  top: 45%;
+
+  height: 400px;
 }
 
-#navbar a.logo {
-  display:block;
-  padding:3px;
-  background-color:#fff;
-  color:#777777;
-  height:40px;
-  width:40px;
-  margin:15px;
-  font-size:26px;
-  font-weight:700;
-  text-align:center;
-  text-decoration:none;
-  text-shadow:0 0 0;
+.navigation li:hover,.active{
+
+	cursor:pointer;
+  color:white!important;
 }
 
-@media (max-width: 768px) {
-  #sidebar,#sidebar a.logo {
-    text-align:center;
-    margin:0 auto;
-    font-size:26px;
-  }
-  #sidebar a.logo {
-    font-size:50px;
-    height:75px;
-    width:75px;
-  }
+.slide{
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
 }
 
-.wrapper, .row {
-   height: 95%;
-   margin-left:0;
-   margin-right:0;
+.wrapper{
+	margin:0 auto;
+	position:relative;
 }
 
-.wrapper:before, .wrapper:after,
-.column:before, .column:after {
-    content: "";
-    display: table;
+.fa-circle {
+  font-size: 200px;
+  z-index: 1;
+  top: 460px;
 }
 
-.wrapper:after,
-.column:after {
-    clear: both;
+/******************************
+ SLIDE 1
+*******************************/
+#slide1{
+	background-color:#219E76;
 }
 
-.column {
-    height: 100%;
-    overflow: auto;
-    *zoom:1;
+#slide1 h2{
+	position:absolute;
+  left: 8%;
+  top: 10%;
+  color:white;
+}
+/******************************
+ SLIDE 2
+*******************************/
+#slide2{
+	background-color:#BB846B;
+  margin-top: -5px;
 }
 
-#main {
-  height: 100%;
+/******************************
+ SLIDE 3
+*******************************/
+#slide3{
+	background-color:#b6c10b;
 }

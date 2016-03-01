@@ -27,7 +27,12 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 
 gem 'font-awesome-sass', '~> 4.5.0'
 
-gem 'scrollspy-rails'
+gem 'stellar-js-rails', '~> 0.6.2.1'
+
+gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
+
+gem 'jquery-easing-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
