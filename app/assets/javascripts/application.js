@@ -34,18 +34,14 @@ jQuery(document).ready(function ($) {
 
 
     //Setup waypoints plugin
-    slide.waypoint(function (event, direction) {
+    slide.waypoint(function (direction) {
 
-        //cache the variable of the data-slide attribute associated with each slide
-        dataslide = $(this).attr('data-slide');
+    dataslide = $(this).attr('data-slide');
 
-        //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and
-        //remove the active class from the previous navigation link
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-
-        // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
-        //remove the active class from the next navigation link
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+    if (direction === 'down') {
+    $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active'); }
+    else {
+    $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active'); }
 
     });
 
