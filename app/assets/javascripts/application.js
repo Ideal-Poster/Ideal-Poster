@@ -30,6 +30,7 @@ jQuery(document).ready(function ($) {
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
+    wHeight = $(window).height();
 
 
     //Setup waypoints plugin
@@ -56,6 +57,23 @@ jQuery(document).ready(function ($) {
             $('.navigation li[data-slide="2"]').removeClass('active');
         }
     });
+
+    mywindow.ready(function() {
+
+        $('.slide')
+          .height(wHeight)
+          .scrollie({
+            scrollOffset : -300,
+            scrollingInView : function(elem) {
+
+              var bgColor = elem.data('background');
+
+              $('body').css('background-color', bgColor);
+
+            }
+          });
+
+      });
 
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.

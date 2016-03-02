@@ -26,7 +26,17 @@ html,body{
   left: 20px;
   font-size: 26px;
 }
+.icon {
+  height: 20px;
+  margin-top: -200px ;
+}
 
+.logo {
+  display:block;
+   padding:3px;
+   background-color:#fff;
+   text-shadow:0 0 0;
+}
 .navigation{
 	position:fixed;
 	z-index:1;
@@ -62,9 +72,14 @@ html,body{
 .nav-right {
   position:fixed;
   right: 0;
-  top: 45%;
+  top: 40%;
+  height: 80px;
+}
 
-  height: 400px;
+.nav-right i {
+  color: #D9D9D9;
+	margin-top: 15px;
+	margin-bottom:15px;
 }
 
 .navigation li:hover,.active{
@@ -96,20 +111,32 @@ html,body{
  SLIDE 1
 *******************************/
 #slide1{
-	background-color:#219E76;
+
 }
 
-#slide1 h2{
+#slide1 h2,p{
 	position:absolute;
-  left: 8%;
   top: 10%;
-  color:white;
 }
+
+#slide1 h2 {
+	color:white;
+
+}
+
+#slide1 .skills {
+	background-color: #F5D773;
+	left:14px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
 /******************************
  SLIDE 2
 *******************************/
 #slide2{
-	background-color:#BB846B;
   margin-top: -5px;
 }
 
@@ -117,5 +144,5 @@ html,body{
  SLIDE 3
 *******************************/
 #slide3{
-	background-color:#b6c10b;
+
 }

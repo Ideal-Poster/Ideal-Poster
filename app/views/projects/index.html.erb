@@ -1,46 +1,68 @@
 
-  <ul class="nav-left navigation hidden-xs">
+  <ul class="nav-left navigation hidden-xs hidden-sm">
+    <li><a class="logo" href="#">M</a></li>
     <li data-slide="1">Home</li>
     <li data-slide="2">Projects</li>
     <li data-slide="3">Contact</li>
   </ul>
 
-  <div class="navigation rotate name">
+  <div class="navigation rotate name hidden-xs hidden-sm">
     Malcolm <br>
     Gourdine
   </div>
-
-
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-  <div class="row">
-    <div class="col-xs-9">
-      <h2 class="col-xs-offset-2" data-stellar-ratio="3" data-stellar-vertical-offset="-32">
+<!-- Slide 1 -->
+<div class="slide" id="slide1"
+      data-background="green"
+      data-slide="1"
+      data-stellar-background-ratio="0.5">
+  <div class="wrapper">
+    <div class="col-xs-10">
+      <h2 class="col-xs-offset-2"
+          data-stellar-ratio="3"
+          data-stellar-vertical-offset="-32">
         Full stack web development using the latest frameworks like -
         Ruby on Rails, AngularJS, and Bootstrap. Marvelously and obsessively
         designed by me.
       </h2>
+      <p class="skills col-xs-offset-2"
+          data-stellar-ratio="5"
+          data-stellar-vertical-offset="-65">
+        skills
+      </p>
     </div>
   </div>
 
   <div class="row">
-    <span class="col-xs-offset-9 col-xs-3 fa fa-circle" data-stellar-ratio="2" data-stellar-vertical-offset="0">
+    <span class="col-xs-offset-9 col-xs-3 fa fa-circle"
+          data-stellar-ratio="2"
+          data-stellar-vertical-offset="0">
+      <div class="icon">
 
+      <%= image_tag "gifs/animat-diamond.gif" %>
+      </div>
     </span>
 
   </div>
 </div>
 
-<!--End Slide 1-->
+<!--Slide 2-->
 
-<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5" >
+<div class="slide" id="slide2"
+      data-slide="2"
+      data-stellar-background-ratio="0.5"
+      data-background="blue">
   <div class="wrapper">
 
   </div>
 </div>
 
-<!--End Slide 2-->
+<!--Slide 3-->
 
-<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+<div class="slide"
+    id="slide3"
+    data-slide="3"
+    data-stellar-background-ratio="0.5"
+    data-background="grey">
   <div class="wrapper">
 
   </div>
@@ -50,7 +72,7 @@
 
 </div>
 
-<ul class="navigation nav-right hidden-xs">
+<ul class="navigation nav-right hidden-sm hidden-xs">
   <li>
     <a href="#">
       <i class="fa fa-twitter fa-2x"></i>
