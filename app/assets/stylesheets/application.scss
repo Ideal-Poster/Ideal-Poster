@@ -11,7 +11,8 @@
  * file per style scope.
  *
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap-sprockets";
@@ -19,40 +20,56 @@
 
 
 body {
+  transition: background .4s ease;
+  background: #015AA0;
 	font-family: 'Open Sans', sans-serif;
-  transition: background 0.3s ease;
-  background: #219E76;
-	width:100%;
-	height:100%;
 	font-weight: 100;
 }
+
+.navigation{
+	z-index:1;
+	position: fixed;
+}
+
+.navigation li{
+	color:#131313;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	-webkit-transition: all .1s ease-in-out;
+	text-align:left;
+}
+
+.navigation li:hover,.active{
+	cursor:pointer;
+  color:white!important;
+}
+
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size:30px;
 	font-weight:100;
+	letter-spacing: 1px;
 }
-.name {
-  bottom:110px;
-  left:20px;
-  font-size:30px;
-	font-weight:300;
-	color:black;
-	opacity:0.7;
-}
-.icon {
-  height: 20px;
-  margin-top: -200px ;
-}
-.logo {
+
+
+#sidebar li a#logo {
+
   display:block;
-   padding:3px;
-   background-color:#6A9FC9;
-   text-shadow:0 0 0;
+  padding:3px;
+  background-color:#015AA0;
+  color:#C34A80;
+  height:40px;
+  width:40px;
+  margin-bottom: 15px;
+  font-size:26px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:0 0 0;
 }
-.navigation{
-	position:fixed;
-	z-index:1;
-}
+
 .rotate {
   -webkit-transform: rotate(-90deg);
   /* Firefox */
@@ -64,43 +81,34 @@ h2 {
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+
+.name {
+	bottom:180px;
+  left:-93px;
+  font-size:38px;
+	font-weight:800;
+	color:black;
+	opacity:0.6;
+}
 .nav-left {
-  top:85px;
+  top:50px;
+	z-index: 20;
 }
-.navigation li{
-	color:#131313;
-	display:block;
-	padding: 0 10px;
-	line-height:30px;
-	margin-bottom:2px;
-	-webkit-transition: all .2s ease-in-out;
-	text-align:left;
-	width:100px;
-}
+
 .nav-right {
-  position:fixed;
   right: 0;
-  top: 40%;
   height: 80px;
+	padding-right: 40px;
+	bottom: 50%;
+	transition: background .4s ease;
 }
-.nav-right i {
-  color: #D9D9D9;
-	margin-top: 15px;
-	margin-bottom:15px;
+
+.nav-right i{
+	padding: 15px 0px 15px 0px;
 }
-.navigation li:hover,.active{
-	cursor:pointer;
-  color:white!important;
-}
-.slide{
-	width:100%;
-	height:100%;
-	position: relative;
-  overflow: hidden;
-}
-.wrapper{
-	margin:0 auto;
-	position:relative;
+
+.nav-right i:hover{
+	color: #C34A80 !important;
 }
 .fa-circle {
   font-size: 200px;
@@ -109,32 +117,80 @@ h2 {
 	color:#224687;
 }
 
+.slide {
+  width: 100%;
+  height: 2000px;
+  padding: 0;
+	border: 1px solid transparent;
+	top:0;
+}
+
+.skills {
+	display: block;
+	background-color: #F5D773;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 6px 6px -20px 6px;
+}
+
 /******************************
  SLIDE 1
 *******************************/
+.diamond{
+	margin-top: -210px;
+	margin-left: 12px;
+}
+
+
 #slide1{
+
 
 }
 
-#slide1 h2,p{
-	position:absolute;
-  top: 10%;
+#slide1 p a{
+	color: #6A9FC9;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+
+}
+
+#slide1 p a:hover{
+	color: #CF4A80;
+}
+
+#slide1 ul {
+	list-style-type: none;
+	padding-left: 0px;
+	color: white;
+	font-size: 20px;
 }
 
 #slide1 h2 {
 	color:white;
-
+	padding-top: 30px;
 }
 
 #slide1 .skills {
 	background-color: #F5D773;
-	left:14px;
-	font-size: 16px;
 	letter-spacing: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
 }
+.skills-row{
+	margin-top: 45px;
+	margin-left: -26px;
+	font-size: 16px;
 
+}
+.development{
+	margin-top: 50px;
+	margin-left: -27px;
+}
+.fa-circle {
+	margin-top: 10px;
+	margin-left: -20px;
+}
 /******************************
  SLIDE 2
 *******************************/

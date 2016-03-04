@@ -18,7 +18,17 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+
+
+
 jQuery(document).ready(function ($) {
+
+  angular.module('Ideal_Poster', [])
+    .controller('mainController', function() {
+
+  });
 
 
     //initialise Stellar.js
@@ -27,10 +37,8 @@ jQuery(document).ready(function ($) {
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.slide');
-    button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
-    wHeight = $(window).height();
 
 
     //Setup waypoints plugin
@@ -42,8 +50,8 @@ jQuery(document).ready(function ($) {
     $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active'); }
     else {
     $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active'); }
-
     });
+
 
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     //from navigation link slide 2 and adds it to navigation link slide 1.
@@ -57,14 +65,17 @@ jQuery(document).ready(function ($) {
     mywindow.ready(function() {
 
         $('.slide')
-          .height(wHeight)
           .scrollie({
-            scrollOffset : -300,
+            scrollOffset : -100,
             scrollingInView : function(elem) {
 
               var bgColor = elem.data('background');
+              var secColor = elem.data('secondary');
+
 
               $('body').css('background-color', bgColor);
+              $('.nav-right i').css('color', secColor);
+              $('.logo').css('background-color', secColor);
 
             }
           });
