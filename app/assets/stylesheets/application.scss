@@ -19,6 +19,8 @@
 @import "bootstrap";
 
 
+
+
 body {
   transition: background .4s ease;
   background: #015AA0;
@@ -63,32 +65,27 @@ h2 {
   height:40px;
   width:40px;
   margin-bottom: 15px;
-  font-size:26px;
+  font-size:28px;
   font-weight:700;
   text-align:center;
   text-decoration:none;
   text-shadow:0 0 0;
 }
 
-.rotate {
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-  /* Internet Explorer */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+.me {
+  opacity: 0;
+  transition: all .4s ease-in;
+  margin-left: -100px;
+}
+
+.js-me-animate {
+  opacity: 1;
+  margin-left:-25px;
+
 }
 
 .name {
-	bottom:180px;
-  left:-93px;
-  font-size:38px;
-	font-weight:800;
-	color:black;
-	opacity:0.6;
+  margin-top:105px;
 }
 .nav-left {
   top:50px;
@@ -100,7 +97,7 @@ h2 {
   height: 80px;
 	padding-right: 40px;
 	bottom: 50%;
-	transition: background .4s ease;
+	transition: background .7s ease;
 }
 
 .nav-right i{
@@ -137,14 +134,14 @@ h2 {
 /******************************
  SLIDE 1
 *******************************/
-.diamond{
-	margin-top: -210px;
+.gifs{
+	margin-top: -213px;
 	margin-left: 12px;
 }
 
 
-#slide1{
-
+#slide1 li{
+cursor: default;
 
 }
 

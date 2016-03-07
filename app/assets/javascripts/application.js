@@ -24,15 +24,18 @@
 
 
 jQuery(document).ready(function ($) {
-
+//angularjs
   angular.module('Ideal_Poster', [])
-    .controller('mainController', function() {
-
+    .controller('mainController', function($scope) {
+      $scope.responsive = false;
+      $scope.diamond = false;
+      $scope.checkmark = false;
   });
 
 
     //initialise Stellar.js
     $(window).stellar();
+
 
     //Cache some variables
     var links = $('.navigation').find('li');
@@ -40,8 +43,12 @@ jQuery(document).ready(function ($) {
     mywindow = $(window);
     htmlbody = $('html,body');
 
-
     //Setup waypoints plugin
+    me = $('.me');
+    me.waypoint(function (){
+      me.addClass('js-me-animate');
+    }, { offset: '70%'});
+
     slide.waypoint(function (direction) {
 
     dataslide = $(this).attr('data-slide');
@@ -63,24 +70,27 @@ jQuery(document).ready(function ($) {
     });
 
     mywindow.ready(function() {
-
         $('.slide')
           .scrollie({
             scrollOffset : -100,
             scrollingInView : function(elem) {
 
               var bgColor = elem.data('background');
-              var secColor = elem.data('secondary');
+              var navrightColor = elem.data('navright');
+              var logobackgroundColor = elem.data('logobackground');
+              var logoColor = elem.data('logo');
 
 
               $('body').css('background-color', bgColor);
-              $('.nav-right i').css('color', secColor);
-              $('.logo').css('background-color', secColor);
+              $('.nav-right i').css('color', navrightColor);
+              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
+              $('#sidebar li a#logo').css('color', logoColor)
+
 
             }
           });
+    });
 
-      });
 
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
@@ -89,8 +99,6 @@ jQuery(document).ready(function ($) {
             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
         }, 2000, 'easeInOutQuint');
     }
-
-
 
     //When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
     links.click(function (e) {

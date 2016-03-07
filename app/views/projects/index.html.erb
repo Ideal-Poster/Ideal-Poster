@@ -6,15 +6,19 @@
     <li data-slide="1">Home</li>
     <li data-slide="2">Projects</li>
     <li data-slide="3">Contact</li>
+    <div style="border-bottom: 1px solid red">
+
+      <li class="name">Malcolm <br> Gourdine</li>
+    </div>
+
+    <li>phone: <br> 347 752 0627</li>
+    <li>Email</li>
+
   </ul>
 
-  <div class="navigation rotate name hidden-xs">
-    <h1 class="name">Malcolm Gourdine</h1>
-  </div>
+
 </div>
 
-<div class="navigation rotate name hidden-xs">
-</div>
 
 <!-- Slide 1 -->
 
@@ -22,8 +26,9 @@
 
   <div class="slide" id="slide1"
       data-background="#015AA0"
-      data-secondary="#6A9FC9"
-      data-tirshiary="#CB4A80"
+      data-navright="#6A9FC9"
+      data-logobackground="#015AA0"
+      data-logo="#C34A80"
       data-slide="1"
       ng-controller="mainController">
     <div class="row">
@@ -47,11 +52,20 @@
       <div class="col-sm-5">
 
         <ul>
-          <h3>Developement</h3>
-          <li>Website</li>
-          <li>Web Application</li>
-          <li>Ruby on Rails Specialist</li>
-          <li>Test Driven Development</li>
+          <h3>Development</h3>
+          <li ng-mouseover="responsive = true"
+              ng-mouseout="responsive = false">
+            Website & <br>
+            Web Application
+          </li>
+          <li ng-mouseover="diamond = true"
+              ng-mouseout="diamond = false">
+            Ruby on Rails Specialist
+          </li>
+          <li ng-mouseover="checkmark = true"
+              ng-mouseout="checkmark = false">
+            Test Driven Development
+          </li>
         </ul>
       </div>
 
@@ -66,16 +80,33 @@
           <li>Illustrator Desgin</li>
         </ul>
       </div>
-      <div class="col-xs-2">
 
+      <div class="col-xs-2">
         <span class="fa fa-circle">
-          <div ng-show="false" class="diamond"><%= image_tag("gifs/animat-diamond.gif") %></div>
+          <div ng-show="diamond"
+              class="gifs"><%= image_tag("gifs/animat-diamond.gif") %>
+         </div>
+         <div ng-show="responsive"
+              class="gifs"><%= image_tag("gifs/animat-responsive.gif") %>
+          </div>
+          <div ng-show="checkmark"
+               class="gifs"><%= image_tag("gifs/animat-checkmark.gif") %>
+           </div>
         </span>
       </div>
-
     </div>
 
+      <div class="col-xs-4">
+        <div><%= image_tag("me.png", class: "me img-responsive") %></div>
 
+      </div>
+
+      <div class="col-sm-5">
+        <h3>How I work</h3>
+        <p>
+          Idea, research, test, code, launch
+        </p>
+      </div>
   </div>
 
 
@@ -84,7 +115,9 @@
   <div class="slide" id="slide2"
       data-slide="2"
       data-background="#784867"
-      data-secondary="white">
+      data-navright="white"
+      data-logobackground="#D86273"
+      data-logo="white">
 
   </div>
 
