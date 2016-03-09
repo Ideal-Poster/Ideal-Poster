@@ -19,23 +19,16 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-
-
-
-
 jQuery(document).ready(function ($) {
 //angularjs
   angular.module('Ideal_Poster', [])
     .controller('mainController', function($scope) {
-      $scope.responsive = false;
-      $scope.diamond = false;
-      $scope.checkmark = false;
+
   });
 
 
     //initialise Stellar.js
     $(window).stellar();
-
 
     //Cache some variables
     var links = $('.navigation').find('li');
@@ -45,9 +38,25 @@ jQuery(document).ready(function ($) {
 
     //Setup waypoints plugin
     me = $('.me');
-    me.waypoint(function (){
-      me.addClass('js-me-animate');
-    }, { offset: '70%'});
+    me.waypoint(function (direction){
+      if (direction == 'down') {
+        me.addClass('js-me-animate');
+      } else {
+        me.removeClass('js-me-animate');
+      }
+    }, { offset: '90%'});
+
+    me = $('.me');
+    me.waypoint(function (direction){
+      if (direction == 'down') {
+        me.removeClass('js-me-animate');
+      }  else {
+        me.addClass('js-me-animate');
+      }
+    }, { offset: '1%'});
+
+
+
 
     slide.waypoint(function (direction) {
 
@@ -80,17 +89,14 @@ jQuery(document).ready(function ($) {
               var logobackgroundColor = elem.data('logobackground');
               var logoColor = elem.data('logo');
 
-
               $('body').css('background-color', bgColor);
               $('.nav-right i').css('color', navrightColor);
               $('#sidebar li a#logo').css('background-color', logobackgroundColor);
               $('#sidebar li a#logo').css('color', logoColor)
 
-
             }
           });
     });
-
 
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
@@ -106,6 +112,5 @@ jQuery(document).ready(function ($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
-
 
 });

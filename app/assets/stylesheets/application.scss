@@ -20,6 +20,11 @@
 
 
 
+.description {
+
+  color: white;
+
+}
 
 body {
   transition: background .4s ease;
@@ -76,6 +81,7 @@ h2 {
   opacity: 0;
   transition: all .4s ease-in;
   margin-left: -100px;
+  margin-top: 30px;
 }
 
 .js-me-animate {
@@ -85,7 +91,7 @@ h2 {
 }
 
 .name {
-  margin-top:105px;
+  margin-top:110px;
 }
 .nav-left {
   top:50px;
@@ -110,7 +116,7 @@ h2 {
 .fa-circle {
   font-size: 200px;
   z-index: 1;
-  top: 460px;
+
 	color:#224687;
 }
 
@@ -135,8 +141,7 @@ h2 {
  SLIDE 1
 *******************************/
 .gifs{
-	margin-top: -213px;
-	margin-left: 12px;
+	margin: -213px 0px 12px 8px;
 }
 
 
@@ -178,14 +183,15 @@ cursor: default;
 	margin-top: 45px;
 	margin-left: -26px;
 	font-size: 16px;
+  margin-bottom: 10px;
 
 }
 .development{
 	margin-top: 50px;
 	margin-left: -27px;
+  margin-bottom: 10px;
 }
 .fa-circle {
-	margin-top: 10px;
 	margin-left: -20px;
 }
 /******************************
