@@ -4,7 +4,7 @@
     <li data-slide="1">Home</li>
     <li data-slide="2">Projects</li>
     <li data-slide="3">Contact</li>
-    <div style="border-bottom: 1px solid red">
+    <div style="border-bottom: 1px solid #C34A80">
       <li class="name active">Malcolm <br> Gourdine</li>
     </div>
     <li>(347)752 0627</li>
@@ -48,17 +48,14 @@
       <div class="col-sm-5">
         <ul>
           <h3>Development</h3>
-          <li ng-mouseover="responsive = true"
-              ng-mouseout="responsive = false">
+          <li>
             Website & <br>
             Web Application
           </li>
-          <li ng-mouseover="diamond = true"
-              ng-mouseout="diamond = false">
+          <li>
             Ruby on Rails Specialist
           </li>
-          <li ng-mouseover="checkmark = true"
-              ng-mouseout="checkmark = false">
+          <li>
             Test Driven Development
           </li>
         </ul>
@@ -130,8 +127,16 @@
   <div class="slide"
     id="slide3"
     data-slide="3"
-    data-background="#F1EFE9">
+    data-background="#e0ddd8"
+    data-navright="#bfb5b5"
+    data-logobackground="#F1F1F1"
+    data-logo="black">
 
+
+    <form ng-submit="addPost()">
+      <input type="text" ng-model="title"></input>
+      <button type="submit">Post</button>
+    </form>
   </div>
 </div>
 
