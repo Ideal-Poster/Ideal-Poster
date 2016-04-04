@@ -53,13 +53,13 @@ body {
 
 .title-spacing {
   letter-spacing: -2px;
-
 }
 
 .navigation{
 	z-index:1;
 	position: fixed;
 }
+
 
 .navigation li{
 	color:#131313;
@@ -71,9 +71,13 @@ body {
 	text-align:left;
 }
 
-.navigation li:hover,.active{
+.navigation li:hover,.active {
 	cursor:pointer;
-  color:#6A9FC9!important;
+
+}
+
+.active {
+  color: blue;
 }
 
 h2 {
@@ -127,7 +131,7 @@ h2 {
 #name {
   opacity: 0.9;
   font-size: 36px;
-  margin-left: -170px;
+  margin-left: -155px;
   margin-top:293px;
   -ms-transform: rotate(270deg); /* IE 9 */
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
@@ -158,9 +162,7 @@ h2 {
 	padding: 15px 0px 15px 0px;
 }
 
-.nav-right i:hover{
-	color: #C34A80 !important;
-}
+
 .fa-circle {
   font-size: 200px;
   z-index: 1;

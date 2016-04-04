@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
 
   });
 
-
     //initialise Stellar.js
     $(window).stellar();
 
@@ -68,7 +67,6 @@ jQuery(document).ready(function ($) {
     $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active'); }
     });
 
-
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     //from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
@@ -88,12 +86,34 @@ jQuery(document).ready(function ($) {
               var navrightColor = elem.data('navright');
               var logobackgroundColor = elem.data('logobackground');
               var logoColor = elem.data('logo');
+              var pageSelectColor = elem.data('pageselectcolor');
+              var highlightLeftColor = elem.data('highlightleft');
+              var highlightRightColor = elem.data('highlightright');
 
               $('body').css('background-color', bgColor);
               $('.nav-right i').css('color', navrightColor);
               $('#sidebar li a#logo').css('background-color', logobackgroundColor);
-              $('#sidebar li a#logo').css('color', logoColor)
+              $('#sidebar li a#logo').css('color', logoColor);
+              $('.pageselectcolor').css('color', pageSelectColor);
 
+              $('.active').css("color", highlightLeftColor);
+
+              $(".nav-right i").mouseover(function(){
+                $(this).css("color", highlightRightColor);
+              });
+              $(".nav-right i").mouseout(function(){
+                $(this).css("color", navrightColor);
+              });
+
+              $(".navigation li").mouseover(function(){
+                $(this).css("color", highlightLeftColor);
+              });
+              $(".navigation li").mouseout(function(){
+                if ( !($( this ).hasClass( "active" )) ) {
+                  $(this).css("color", pageSelectColor);
+                }
+
+              });
             }
           });
     });
