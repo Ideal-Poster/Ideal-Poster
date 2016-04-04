@@ -1,16 +1,10 @@
 <div class="column col-xs-2">
-  <ul class="nav-left navigation hidden-sm hidden-xs" id="sidebar">
-    <li><a id="logo" href="#">M</a></li>
-    <li data-slide="1">Home</li>
-    <li data-slide="2">Projects</li>
-    <li data-slide="3">Contact</li>
-    <div style="border-bottom: 1px solid #C34A80">
-      <li class="name active">Malcolm <br> Gourdine</li>
-    </div>
-    <li>(347)752 0627</li>
-    <li>Malcolm<br>
-        gourdine<br>
-      @gmail.com</li>
+  <ul class="nav-left navigation hidden-sm hidden-xs title-spacing" id="sidebar">
+    <li id="logo-spacing"><a id="logo" href="#">M</a></li>
+    <li class="pageselect pageselectcolor" data-slide="1">Home</li>
+    <li class="pageselect pageselectcolor" data-slide="2">Projects</li>
+    <li class="pageselect pageselectcolor" data-slide="3">Contact</li>
+    <li class="pageselectcolor" id="name">MALCOLM GOURDINE</li>
   </ul>
 </div>
 
@@ -24,10 +18,10 @@
       data-navright="#6A9FC9"
       data-logobackground="#015AA0"
       data-logo="#C34A80"
-      data-slide="1"
-      ng-controller="mainController">
-    <div class="row fun">
-      <h2>
+      data-pageselectcolor="#ffffff"
+      data-slide="1">
+    <div class="row">
+      <h2 class="header title-spacing">
         Full stack web development using the latest frameworks like -
         Ruby on Rails, AngularJS, and Bootstrap. Marvelously and obsessively
         designed by me.
@@ -47,7 +41,7 @@
     <div class="development row">
       <div class="col-sm-5">
         <ul>
-          <h3>Development</h3>
+          <h4 class="title-spacing">DEVELOPMENT</h4>
           <li>
             Website & <br>
             Web Application
@@ -63,7 +57,7 @@
 
       <div class="col-sm-5">
         <ul>
-          <h3>Design</h3>
+          <h4 class="title">DESIGN</h4>
           <li>UI (User Interface)</li>
           <li>Brand</li>
           <li>PSD (Photoshop Design)</li>
@@ -87,7 +81,7 @@
       </div>
 
       <div class="col-sm-7 description">
-        <h3>How I work</h3>
+        <h4 class="title-spacing">HOW I WORK</h4>
         <p>
           Idea<br>
           Create a core concept for the functionality and design for a website or
@@ -118,7 +112,8 @@
       data-background="#784867"
       data-navright="white"
       data-logobackground="#D86273"
-      data-logo="white">
+      data-logo="white"
+      data-pageselectcolor="black">
 
   </div>
 
@@ -130,7 +125,8 @@
     data-background="#e0ddd8"
     data-navright="#bfb5b5"
     data-logobackground="#F1F1F1"
-    data-logo="black">
+    data-logo="black"
+    data-pageselectcolor="#1E1C1F">
 
 
     <form ng-submit="addPost()">

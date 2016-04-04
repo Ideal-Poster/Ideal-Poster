@@ -18,19 +18,42 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+@font-face {
+  font-family: "Lucida Grande Regular";
+  src: url(/assets/LucidaGrandeRegular.tff) format("truetype");
+}
 
 .description {
-
   color: white;
+}
+
+
+
+.header {
+  letter-spacing: -2px;
+  line-height: 1;
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.tag_line {
+  color:white;
+  font-weight: lighter;
+  margin-bottom: -20px;
 
 }
 
 body {
+  letter-spacing: -1px;
   transition: background .4s ease;
   background: #015AA0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Lucida Grande Regular";
 	font-weight: 100;
+}
+
+.title-spacing {
+  letter-spacing: -2px;
+
 }
 
 .navigation{
@@ -50,11 +73,11 @@ body {
 
 .navigation li:hover,.active{
 	cursor:pointer;
-  color:white!important;
+  color:#6A9FC9!important;
 }
 
 h2 {
-	font-family: 'Open Sans', sans-serif;
+  font-family: "Lucida Grande Regular";
 	font-size:30px;
 	font-weight:100;
 	letter-spacing: 1px;
@@ -62,13 +85,13 @@ h2 {
 
 
 #sidebar li a#logo {
-
   display:block;
-  padding:3px;
+  padding:6px;
   background-color:#015AA0;
   color:#C34A80;
   height:40px;
   width:40px;
+  margin-top: -3px;
   margin-bottom: 15px;
   font-size:28px;
   font-weight:700;
@@ -77,34 +100,58 @@ h2 {
   text-shadow:0 0 0;
 }
 
+#page-select {
+  color: #ffffff;
+  line-height: 1.4;
+  font-size: 15px;
+  width: 80px;
+}
+
+#logo-spacing {
+  padding-bottom: 81px;
+}
+
 .me {
   opacity: 0;
   transition: all .4s ease-in;
-  margin-left: -100px;
-  margin-top: 30px;
+  margin-left: -20px;
+  margin-top: -40px;
 }
 
 .js-me-animate {
   opacity: 1;
-  margin-left:-25px;
+  margin-top:8px;
 
 }
 
-.name {
-  margin-top:110px;
+#name {
+  opacity: 0.9;
+  font-size: 36px;
+  margin-left: -170px;
+  margin-top:293px;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  transform: rotate(270deg);
+  color: #ffffff;
+  line-height: 1.4;
 }
+
+
+
 .nav-left {
-  top:50px;
+  top:53px;
 	z-index: 20;
+  left: -5px;
+  font-size: 16px;
+
 }
 
 .nav-right {
-  right: 0;
+  right: 15px;
   height: 80px;
-	padding-right: 40px;
+	padding-right: 15px;
 	bottom: 50%;
 	transition: background .7s ease;
-
 }
 
 .nav-right i{
@@ -200,7 +247,7 @@ cursor: default;
 *******************************/
 #slide2{
 
-	}
+}
 
 /******************************
  SLIDE 3

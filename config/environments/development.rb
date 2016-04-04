@@ -45,5 +45,8 @@ Rails.application.configure do
    :password             => ENV['gmail_password'],
    :authentication       => "plain",
    :enable_starttls_auto => true
-    }
+  }
+
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  config.assets.precompile += %w( .svg .eot .woff .ttf)  
 end
