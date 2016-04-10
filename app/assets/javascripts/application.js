@@ -90,13 +90,13 @@ jQuery(document).ready(function ($) {
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
 
+
               $('body').css('background-color', bgColor);
               $('.nav-right i').css('color', navrightColor);
               $('#sidebar li a#logo').css('background-color', logobackgroundColor);
               $('#sidebar li a#logo').css('color', logoColor);
               $('.pageselectcolor').css('color', pageSelectColor);
 
-              $('.active').css("color", highlightLeftColor);
 
               $(".nav-right i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
@@ -105,15 +105,19 @@ jQuery(document).ready(function ($) {
                 $(this).css("color", navrightColor);
               });
 
+
               $(".navigation li").mouseover(function(){
                 $(this).css("color", highlightLeftColor);
               });
               $(".navigation li").mouseout(function(){
-                if ( !($( this ).hasClass( "active" )) ) {
+              //  if ( !($( this ).hasClass( "active" )) ) {
                   $(this).css("color", pageSelectColor);
-                }
-
+                //} else {
+                //  $(this).css("color", highlightLeftColor);
+              //  }
               });
+
+
             }
           });
     });

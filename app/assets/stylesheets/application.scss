@@ -71,14 +71,11 @@ body {
 	text-align:left;
 }
 
-.navigation li:hover,.active {
+.navigation li:hover {
 	cursor:pointer;
 
 }
 
-.active {
-  color: blue;
-}
 
 h2 {
   font-family: "Lucida Grande Regular";
@@ -104,11 +101,12 @@ h2 {
   text-shadow:0 0 0;
 }
 
-#page-select {
+.pageselect {
   color: #ffffff;
   line-height: 1.4;
   font-size: 15px;
-  width: 80px;
+  width: 65px;
+
 }
 
 #logo-spacing {
@@ -147,7 +145,6 @@ h2 {
 	z-index: 20;
   left: -5px;
   font-size: 16px;
-
 }
 
 .nav-right {
@@ -156,6 +153,11 @@ h2 {
 	padding-right: 15px;
 	bottom: 50%;
 	transition: background .7s ease;
+}
+
+.active {
+  background-color: rgba(0,0,0,0.2);
+
 }
 
 .nav-right i{
@@ -174,8 +176,6 @@ h2 {
   width: 100%;
   height: 2000px;
   padding: 0;
-	border: 1px solid transparent;
-	top:0;
 }
 
 .skills {
