@@ -16,10 +16,13 @@
 //= require jquery.easing
 //= require jquery.waypoints
 //= require turbolinks
+//= require jquery.validate
+//= require jquery.validate.additional-methods
 //= require bootstrap-sprockets
 //= require_tree .
 
 jQuery(document).ready(function ($) {
+  $(".horizontal-form").validate();
 //angularjs
   angular.module('Ideal_Poster', [])
     .controller('mainController', function($scope) {

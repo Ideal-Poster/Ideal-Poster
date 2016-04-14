@@ -48,8 +48,8 @@ gem 'guard-bundler', group: :development
 
 gem "figaro"
 
+gem 'jquery-validation-rails'
 
-gem 'client_side_validations'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
