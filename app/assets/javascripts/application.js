@@ -77,6 +77,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
+
+
     mywindow.ready(function() {
         $('.slide')
           .scrollie({
@@ -90,7 +92,6 @@ jQuery(document).ready(function ($) {
               var pageSelectColor = elem.data('pageselectcolor');
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
-
 
               $('body').css('background-color', bgColor);
               $('.nav-right i').css('color', navrightColor);

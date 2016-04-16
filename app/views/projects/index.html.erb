@@ -136,7 +136,7 @@
     data-highlightleft="#C4AD8D">
 
     <div class="col-sm-offset-2 col-xs-12 col-sm-8 col-md-8">
-
+      <h2 class="contact">CONTACT</h2>
         <%= simple_form_for @contact, :html => { :class => 'horizontal-form contact-form' } do |f| %>
         <div class="contact-spacing">
           <%= f.input :name,:required => true %>
@@ -144,30 +144,20 @@
         <div class="contact-spacing">
           <%= f.input :email, :required => true %>
         </div>
-
         <%= f.input :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
         <div class="hidden">
           <%= f.input :nickname, :hint => 'Leave this field blank!' %>
         </div>
         <div class="row">
-
           <div class="budget-buttons col-xs-6">
             Budget: &nbsp;
-            <%= radio_button_tag(:budget, "child") %>
-            <%= label_tag(:budget_small, "$") %>
-            &nbsp;
-
-            <%= radio_button_tag(:budget, "adult") %>
-            <%= label_tag(:budget_medium, "$$") %>
-            &nbsp;
-
-            <%= radio_button_tag(:budget, "child") %>
-            <%= label_tag(:budget_large, "$$$") %>
-            &nbsp;
+            <%= f.radio_button :budget,'$',:checked => true%>$ &nbsp;
+            <%= f.radio_button :budget,'$$'%>$$ &nbsp;
+            <%= f.radio_button :budget,'$$$'%>$$$
           </div>
 
           <div class="form-actions button col-sm-6">
-            <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+            <%= f.button :submit, 'Send message', :class=> "btn btn-danger" %>
           </div>
         </div>
 

@@ -12,7 +12,6 @@ class ContactsController < ApplicationController
     else
       flash.now[:error] = 'Cannot send message.'
       render  'projects/index'
-      #render :new
     end
   end
 end

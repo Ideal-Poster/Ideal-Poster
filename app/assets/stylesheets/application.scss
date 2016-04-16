@@ -110,7 +110,7 @@ h2 {
 }
 
 #logo-spacing {
-  padding-bottom: 81px;
+  padding-bottom: 61px;
 }
 
 .me {
@@ -253,8 +253,8 @@ cursor: default;
 	margin-left: -20px;
 }
 
-.contact-form {
-  margin-top: 166px;
+.contact {
+  margin-top: 120px;
 
 }
 .contact-spacing{
@@ -271,22 +271,12 @@ cursor: default;
  SLIDE 3
 *******************************/
 
-.btn-primary{
-  background-color:#CE4644;
-  border-color: #df9897;
-
-}
-
-
-.btn-primary:hover, .btn-primary:active{
-  background-color:#a43d3b;
-  border-color: #F6F6F5;
-}
 
 .button {
 margin-top: 14px;
 text-align: right;
 }
+
 
 .budget {
 }
@@ -296,5 +286,10 @@ text-align: right;
 }
 
 #slide3{
-  height: 900px;
+  height: 72em;
+  padding-top:50px;
+}
+
+.inline {
+  display: inline-block;
 }
