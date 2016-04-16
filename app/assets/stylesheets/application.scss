@@ -166,15 +166,14 @@ h2 {
 
 
 .fa-circle {
+  margin-top: -20px;
   font-size: 200px;
   z-index: 1;
-
 	color:#224687;
 }
 
 .slide {
   width: 100%;
-  height: 2000px;
   padding: 0;
 }
 
@@ -187,6 +186,10 @@ h2 {
 	padding: 6px 6px -20px 6px;
 }
 
+.how {
+  margin-left: -10px;
+}
+
 /******************************
  SLIDE 1
 *******************************/
@@ -194,6 +197,10 @@ h2 {
 	margin: -213px 0px 12px 8px;
 }
 
+#slide1{
+  height: 1600px;
+  margin-bottom: 300px;
+}
 
 #slide1 li{
 cursor: default;
@@ -228,6 +235,7 @@ cursor: default;
 	letter-spacing: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
+
 }
 .skills-row{
 	margin-top: 45px;
@@ -244,16 +252,49 @@ cursor: default;
 .fa-circle {
 	margin-left: -20px;
 }
+
+.contact-form {
+  margin-top: 166px;
+
+}
+.contact-spacing{
+  margin: 10px 0px 10px 0px;
+}
 /******************************
  SLIDE 2
 *******************************/
 #slide2{
-
+  height: 2000px;
 }
 
 /******************************
  SLIDE 3
 *******************************/
-#slide3{
 
+.btn-primary{
+  background-color:#CE4644;
+  border-color: #df9897;
+
+}
+
+
+.btn-primary:hover, .btn-primary:active{
+  background-color:#a43d3b;
+  border-color: #F6F6F5;
+}
+
+.button {
+margin-top: 14px;
+text-align: right;
+}
+
+.budget {
+}
+
+.budget-buttons {
+  margin-top: 22px;
+}
+
+#slide3{
+  height: 900px;
 }

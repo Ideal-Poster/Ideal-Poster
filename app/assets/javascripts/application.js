@@ -58,8 +58,6 @@ jQuery(document).ready(function ($) {
     }, { offset: '1%'});
 
 
-
-
     slide.waypoint(function (direction) {
 
     dataslide = $(this).attr('data-slide');
@@ -82,7 +80,7 @@ jQuery(document).ready(function ($) {
     mywindow.ready(function() {
         $('.slide')
           .scrollie({
-            scrollOffset : -100,
+            scrollOffset : -300,
             scrollingInView : function(elem) {
 
               var bgColor = elem.data('background');
@@ -100,14 +98,12 @@ jQuery(document).ready(function ($) {
               $('#sidebar li a#logo').css('color', logoColor);
               $('.pageselectcolor').css('color', pageSelectColor);
 
-
               $(".nav-right i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
               });
               $(".nav-right i").mouseout(function(){
                 $(this).css("color", navrightColor);
               });
-
 
               $(".navigation li").mouseover(function(){
                 $(this).css("color", highlightLeftColor);
