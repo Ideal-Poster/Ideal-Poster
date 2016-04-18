@@ -74,6 +74,8 @@ jQuery(document).ready(function ($) {
         if (mywindow.scrollTop() == 0) {
             $('.navigation li[data-slide="1"]').addClass('active');
             $('.navigation li[data-slide="2"]').removeClass('active');
+            $('.navigation li[data-slide="3"]').removeClass('active');
+
         }
     });
 

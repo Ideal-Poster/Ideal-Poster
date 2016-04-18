@@ -11,6 +11,9 @@
  * file per style scope.
  *
  */
+
+
+ // Bootstrap
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "font-awesome-sprockets";
@@ -23,17 +26,61 @@
   src: url(/assets/LucidaGrandeRegular.tff) format("truetype");
 }
 
-.description {
-  color: white;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: none;
+}
+.navbar-default .navbar-toggle:focus span, .navbar-default .navbar-toggle:hover span{
+  background-color: #C34A80;
+}
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
+.navbar-default {
+  background-color: #224687;
+  border-color: #224687;
+}
+.navbar-toggle .icon-bar {
+  background-color: #c34a80;
+}
+.navbar-brand a {
+  color: #ffffff;
+  letter-spacing: 0px;
+}
+.navbar-toggle, .navbar-toggle:hover {
+  background-color: #224687;
+  border: none;
+}
+.icon-bar {
+  background-color: #C34A80;
 }
 
 
+
+.description {
+  color: white;
+}
 
 .header {
   letter-spacing: -2px;
   line-height: 1;
   font-size: 35px;
   margin-bottom: 0px;
+  margin-left: 15px;
 }
 
 .tag_line {
@@ -50,6 +97,8 @@ body {
 	font-family: "Lucida Grande Regular";
 	font-weight: 100;
 }
+
+
 
 .title-spacing {
   letter-spacing: -2px;
@@ -116,7 +165,6 @@ h2 {
 .me {
   opacity: 0;
   transition: all .4s ease-in;
-  margin-left: -20px;
   margin-top: -40px;
 }
 
@@ -130,7 +178,7 @@ h2 {
   opacity: 0.9;
   font-size: 36px;
   margin-left: -155px;
-  margin-top:293px;
+  margin-top:275px;
   -ms-transform: rotate(270deg); /* IE 9 */
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
   transform: rotate(270deg);
@@ -148,11 +196,13 @@ h2 {
 }
 
 .nav-right {
-  right: 15px;
+  right: 17px;
   height: 80px;
 	padding-right: 15px;
 	bottom: 50%;
 	transition: background .7s ease;
+  width:50px;
+  margin-right: 26px;
 }
 
 .active {
@@ -172,6 +222,10 @@ h2 {
 	color:#224687;
 }
 
+.center {
+  text-align: center;;
+}
+
 .slide {
   width: 100%;
   padding: 0;
@@ -186,9 +240,6 @@ h2 {
 	padding: 6px 6px -20px 6px;
 }
 
-.how {
-  margin-left: -10px;
-}
 
 /******************************
  SLIDE 1
@@ -239,14 +290,14 @@ cursor: default;
 }
 .skills-row{
 	margin-top: 45px;
-	margin-left: -26px;
+
 	font-size: 16px;
   margin-bottom: 10px;
 
 }
 .development{
 	margin-top: 50px;
-	margin-left: -27px;
+
   margin-bottom: 10px;
 }
 .fa-circle {
@@ -254,8 +305,8 @@ cursor: default;
 }
 
 .contact {
-  margin-top: 120px;
-
+  margin-top: 130px;
+  margin-bottom: 20px;
 }
 .contact-spacing{
   margin: 10px 0px 10px 0px;
@@ -283,11 +334,13 @@ text-align: right;
 
 .budget-buttons {
   margin-top: 22px;
+
 }
 
 #slide3{
   height: 72em;
   padding-top:50px;
+
 }
 
 .inline {

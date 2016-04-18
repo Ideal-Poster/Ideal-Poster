@@ -1,3 +1,31 @@
+
+  <nav role="navigation" class="navbar navbar-default hidden-md hidden-lg">
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <div class="col-xs-12 center">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="col-xs-offset-2">
+          <div class="navbar-brand">
+            <a href="#">Malcolm Gourdine</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+        <!-- Slide 1   -->
 <div class="column col-xs-2">
   <ul class="nav-left navigation hidden-sm hidden-xs title-spacing" id="sidebar">
     <li id="logo-spacing"><a id="logo" href="#">M</a></li>
@@ -14,14 +42,14 @@
 <div class="col-xs-8">
 
   <div class="slide" id="slide1"
-      data-background="#015AA0"
-      data-navright="#6A9FC9"
-      data-logobackground="#015AA0"
-      data-logo="#C34A80"
-      data-pageselectcolor="#ffffff"
-      data-highlightright="#C34A80"
-      data-highlightleft="#6A9FC9"
-      data-slide="1">
+    data-background="#015AA0"
+    data-navright="#6A9FC9"
+    data-logobackground="#015AA0"
+    data-logo="#C34A80"
+    data-pageselectcolor="#ffffff"
+    data-highlightright="#C34A80"
+    data-highlightleft="#6A9FC9"
+    data-slide="1">
     <div class="row">
       <h2 class="header title-spacing">
         Full stack web development using the latest frameworks like -
@@ -68,10 +96,13 @@
         </ul>
       </div>
 
-      <div class="col-xs-2">
+      <div class="hidden-sm hidden-lg hidden-md">
+      </div>
+
+      <div class="col-xs-2 center">
         <span class="fa fa-circle">
-          <div
-              class="gifs"><%= image_tag("gifs/animat-diamond.gif") %>
+          <div class="gifs">
+            <%= image_tag("gifs/animat-diamond.gif") %>
           </div>
 
         </span>
@@ -86,6 +117,9 @@
       <div class="col-sm-7 description how">
         <h4 class="title-spacing">HOW I WORK</h4>
         <p>
+          When you choose to work with Malcolm Gourdine you're buying a high standard
+          of solid design, striking color and Typography that works. All of my designs
+          are responsive and work on every screen size and type.
           Idea<br>
           Create a core concept for the functionality and design for a website or
           application. <br>
@@ -114,10 +148,10 @@
       data-slide="2"
       data-background="#011E33"
       data-navright="#E49F27"
-      data-logobackground="#4e96d0"
+      data-logobackground="#79DBF6"
       data-logo="#001320"
       data-pageselectcolor="#FFFFFF"
-      data-highlightright="#F3D456"
+      data-highlightright="#E94F0A"
       data-highlightleft="#E49F27">
 
   </div>
@@ -132,10 +166,10 @@
     data-logobackground="#F3FCFC"
     data-logo="#3fd0d3"
     data-pageselectcolor="#3B3B3B"
-    data-highlightright="#EAC767"
+    data-highlightright="#EDD8A1"
     data-highlightleft="#C4AD8D">
 
-    <div class="col-sm-offset-2 col-xs-12 col-sm-8 col-md-8">
+    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
       <h2 class="contact">CONTACT</h2>
         <%= simple_form_for @contact, :html => { :class => 'horizontal-form contact-form' } do |f| %>
         <div class="contact-spacing">
@@ -151,9 +185,9 @@
         <div class="row">
           <div class="budget-buttons col-xs-6">
             Budget: &nbsp;
-            <%= f.radio_button :budget,'$',:checked => true%>$ &nbsp;
-            <%= f.radio_button :budget,'$$'%>$$ &nbsp;
-            <%= f.radio_button :budget,'$$$'%>$$$
+            <%= f.radio_button :budget,'$',:checked => true%> $ &nbsp;
+            <%= f.radio_button :budget,'$$'%> $$ &nbsp;
+            <%= f.radio_button :budget,'$$$'%> $$$
           </div>
 
           <div class="form-actions button col-sm-6">
@@ -171,22 +205,16 @@
 <!-- nav-right -->
 
 <ul class="navigation nav-right affix hidden-sm hidden-xs">
-<li>
   <a href="#">
     <i class="fa fa-twitter fa-2x"></i>
   </a>
-</li>
 
-<li>
-  <a href="#">
+  <a href="https://github.com/Ideal-Poster" target="_blank">
     <i class="fa fa-github fa-2x"></i>
   </a>
-</li>
 
-<li>
-  <a href="#">
+  <a href="https://www.flickr.com/cameraroll/" target="_blank">
     <i class="fa fa-flickr fa-2x"></i>
   </a>
-</li>
 </ul>
 </div>
