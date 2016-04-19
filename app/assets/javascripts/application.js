@@ -26,9 +26,7 @@ jQuery(document).ready(function ($) {
 //angularjs
   angular.module('Ideal_Poster', [])
     .controller('mainController', function($scope) {
-
   });
-
     //initialise Stellar.js
     $(window).stellar();
 
@@ -47,7 +45,6 @@ jQuery(document).ready(function ($) {
         me.removeClass('js-me-animate');
       }
     }, { offset: '90%'});
-
     me = $('.me');
     me.waypoint(function (direction){
       if (direction == 'down') {
@@ -56,37 +53,30 @@ jQuery(document).ready(function ($) {
         me.addClass('js-me-animate');
       }
     }, { offset: '1%'});
-
-
     slide.waypoint(function (direction) {
-
-    dataslide = $(this).attr('data-slide');
-
-    if (direction === 'down') {
-    $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active'); }
-    else {
-    $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active'); }
+      dataslide = $(this).attr('data-slide');
+      if (direction === 'down') {
+      $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+      }
+      else {
+      $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active');
+      }
     });
 
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     //from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
-        if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
-            $('.navigation li[data-slide="3"]').removeClass('active');
-
-        }
+      if (mywindow.scrollTop() == 0) {
+        $('.navigation li[data-slide="1"]').addClass('active');
+        $('.navigation li[data-slide="2"]').removeClass('active');
+        $('.navigation li[data-slide="3"]').removeClass('active');
+      }
     });
-
-
-
     mywindow.ready(function() {
-        $('.slide')
+      $('.slide')
           .scrollie({
             scrollOffset : -300,
             scrollingInView : function(elem) {
-
               var bgColor = elem.data('background');
               var navrightColor = elem.data('navright');
               var logobackgroundColor = elem.data('logobackground');
@@ -96,18 +86,17 @@ jQuery(document).ready(function ($) {
               var highlightRightColor = elem.data('highlightright');
 
               $('body').css('background-color', bgColor);
-              $('.nav-right i').css('color', navrightColor);
+              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
               $('#sidebar li a#logo').css('background-color', logobackgroundColor);
               $('#sidebar li a#logo').css('color', logoColor);
               $('.pageselectcolor').css('color', pageSelectColor);
 
-              $(".nav-right i").mouseover(function(){
+              $(".nav-right i, .small-social-media a i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
               });
-              $(".nav-right i").mouseout(function(){
+              $(".nav-right i, .small-social-media a i").mouseout(function(){
                 $(this).css("color", navrightColor);
               });
-
               $(".navigation li").mouseover(function(){
                 $(this).css("color", highlightLeftColor);
               });
@@ -118,8 +107,6 @@ jQuery(document).ready(function ($) {
                 //  $(this).css("color", highlightLeftColor);
               //  }
               });
-
-
             }
           });
     });

@@ -1,46 +1,44 @@
-
-  <nav role="navigation" class="navbar navbar-default hidden-md hidden-lg">
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-      <div class="col-xs-12 center">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <!-- Small Screen Top Navbar  -->
+<nav role="navigation" class="navbar navbar-default hidden-md hidden-lg">
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+    <div class="col-xs-12 center">
+      <ul class="nav navbar-nav">
+        <li><a href="#slide1">Home</a></li>
+        <li><a href="#slide2">Portfolio</a></li>
+        <li><a href="#slide3">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar "></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="col-xs-offset-2">
+      <div class="navbar-brand">
+        <a href="#">Malcolm Gourdine</a>
       </div>
     </div>
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="col-xs-offset-2">
-          <div class="navbar-brand">
-            <a href="#">Malcolm Gourdine</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-        <!-- Slide 1   -->
+  </div>
+</nav>
+      <!-- Large Screen Left Navbar  -->
 <div class="column col-xs-2">
   <ul class="nav-left navigation hidden-sm hidden-xs title-spacing" id="sidebar">
     <li id="logo-spacing"><a id="logo" href="#">M</a></li>
     <li class="pageselect pageselectcolor" data-slide="1">Home</li>
-    <li class="pageselect pageselectcolor" data-slide="2">Projects</li>
+    <li class="pageselect pageselectcolor" data-slide="2">Portfolio</li>
     <li class="pageselect pageselectcolor" data-slide="3">Contact</li>
     <li class="pageselectcolor" id="name">MALCOLM GOURDINE</li>
   </ul>
 </div>
+      <!-- Slide 1 -->
+      <div class="container-fluid">
 
-
-<!-- Slide 1 -->
 
 <div class="col-xs-8">
-
   <div class="slide" id="slide1"
     data-background="#015AA0"
     data-navright="#6A9FC9"
@@ -57,89 +55,86 @@
         designed by me.
       </h2>
     </div>
-    <div class="row skills-row">
-      <div class="col-xs-4 col-sm-2">
-        <p class="skills">
-          skills
-        </p>
-      </div>
 
-      <p><a href="#">Html</a> <a href="#">CSS</a><a href="#">JavaScript</a>
-        <a href="#">AngularJS</a> <a href="#">Ruby on Rails</a> <a href="#">Postgres</a> <a href="#">RSpec</a></p>
+    <div class="row skills-row">
+      <div class="col-xs-5 col-sm-2">
+        <p class="skills">skills</p>
+      </div>
+      <p>
+        <a href="">Html</a> <a href="">CSS</a><a href="">JavaScript</a>
+        <a href="">AngularJS</a> <a href="">Ruby on Rails</a>
+        <a href="">Postgres</a>
+      </p>
     </div>
 
 
     <div class="development row">
-      <div class="col-sm-5">
-        <ul>
-          <h4 class="title-spacing">DEVELOPMENT</h4>
-          <li>
-            Website & <br>
-            Web Application
-          </li>
-          <li>
-            Ruby on Rails Specialist
-          </li>
-          <li>
-            Test Driven Development
-          </li>
-        </ul>
-      </div>
 
-      <div class="col-sm-5">
+      <div class="col-xs-6 col-sm-5">
         <ul>
           <h4 class="title">DESIGN</h4>
-          <li>UI (User Interface)</li>
+          <li>User Interface</li>
           <li>Brand</li>
-          <li>PSD (Photoshop Design)</li>
+          <li>Photoshop Design</li>
           <li>Illustrator Desgin</li>
         </ul>
       </div>
 
-      <div class="hidden-sm hidden-lg hidden-md">
+      <div class="col-xs-6 col-sm-5">
+        <ul>
+          <h4 class="title-spacing">DEVELOPMENT</h4>
+          <li>Website & <br>
+            Web Application</li>
+          <li>Ruby on Rails</li>
+          <li>Test Driven Development</li>
+        </ul>
       </div>
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="height:30px;">
 
-      <div class="col-xs-2 center">
+      </div>
+      <div class=" col-xs-12 col-sm-2 center">
         <span class="fa fa-circle">
           <div class="gifs">
             <%= image_tag("gifs/animat-diamond.gif") %>
           </div>
-
         </span>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-5">
+      <div class="col-xs-12 col-sm-5">
         <div><%= image_tag("me.png", class: "me img-responsive") %></div>
       </div>
 
-      <div class="col-sm-7 description how">
+      <div class="col-sm-7 col-lg-5 description how">
         <h4 class="title-spacing">HOW I WORK</h4>
         <p>
           When you choose to work with Malcolm Gourdine you're buying a high standard
-          of solid design, striking color and Typography that works. All of my designs
-          are responsive and work on every screen size and type.
-          Idea<br>
-          Create a core concept for the functionality and design for a website or
-          application. <br>
-
-          research <br>
-          Are there any examples of applications with the same or similar concept?
-          What do they do well and what can be improved? How will this project be
-          different?<br>
-
-          test <br>
-          write tests to test the view and functionality of the project.<br>
-
-          code <br>
-          Write code that fulfills the test obligations.  Make sure all tests pass!<br>
-
-          launch <br>
-          Find appropriate web hostinng and deploy for the world to see!
+          of solid design, striking color and Typography that works. All of the
+          web design layouts I make are responsive and work on every screen size
+          and type. My coding process is guided by test driven development.
+          I use the popular testing framework Capybara for front end and RSpec
+          for the backend. I love to callaborate with people to create and build
+          stunning sites and applications you can't take your eyes off of.
         </p>
       </div>
     </div>
+
+      <div class="row">
+        <ul class="center small-social-media hidden-md hidden-lg">
+          <a href="#">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+          <a href="https://github.com/Ideal-Poster" target="_blank">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          <a href="https://www.flickr.com/cameraroll/" target="_blank">
+            <i class="fa fa-flickr fa-lg"></i>
+          </a>
+        </ul>
+      </div>
+
+
   </div>
 
   <!--Slide 2-->
@@ -184,18 +179,17 @@
         </div>
         <div class="row">
           <div class="budget-buttons col-xs-6">
-            Budget: &nbsp;
+            <div>
+              Budget: &nbsp;
+            </div>
             <%= f.radio_button :budget,'$',:checked => true%> $ &nbsp;
             <%= f.radio_button :budget,'$$'%> $$ &nbsp;
             <%= f.radio_button :budget,'$$$'%> $$$
           </div>
-
           <div class="form-actions button col-sm-6">
             <%= f.button :submit, 'Send message', :class=> "btn btn-danger" %>
           </div>
         </div>
-
-
       <% end %>
     </div>
   </div>

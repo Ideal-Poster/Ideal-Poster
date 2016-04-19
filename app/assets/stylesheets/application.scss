@@ -26,11 +26,15 @@
   src: url(/assets/LucidaGrandeRegular.tff) format("truetype");
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background: none;
-}
-.navbar-default .navbar-toggle:focus span, .navbar-default .navbar-toggle:hover span{
+
+.navbar-default .navbar-toggle .icon-bar {
   background-color: #C34A80;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
+}
+.navbar-default .navbar-toggle:hover span{
+  background-color: #9C3B66;
 }
 .navbar-header {
   float: none;
@@ -46,6 +50,9 @@
 }
 .navbar-nav>li {
   float: none;
+}
+.navbar-nav {
+  color: #ffffff;
 }
 .navbar-collapse.collapse.in{
   display:block !important;
@@ -64,6 +71,9 @@
 .navbar-toggle, .navbar-toggle:hover {
   background-color: #224687;
   border: none;
+}
+.nav.navbar-nav li a {
+    color: #c1c1c1;
 }
 .icon-bar {
   background-color: #C34A80;
@@ -155,7 +165,6 @@ h2 {
   line-height: 1.4;
   font-size: 15px;
   width: 65px;
-
 }
 
 #logo-spacing {
@@ -165,27 +174,27 @@ h2 {
 .me {
   opacity: 0;
   transition: all .4s ease-in;
-  margin-top: -40px;
+  margin-top: -25px;
+  height: auto;
+  max-height: 210px;
 }
 
 .js-me-animate {
-  opacity: 1;
-  margin-top:8px;
-
+  opacity: 0.9;
+  margin-top:16px;
 }
 
 #name {
   opacity: 0.9;
   font-size: 36px;
   margin-left: -155px;
-  margin-top:275px;
+  margin-top:215px;
   -ms-transform: rotate(270deg); /* IE 9 */
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
   transform: rotate(270deg);
   color: #ffffff;
   line-height: 1.4;
 }
-
 
 
 .nav-left {
@@ -196,18 +205,33 @@ h2 {
 }
 
 .nav-right {
-  right: 17px;
+  right: 24px;
   height: 80px;
 	padding-right: 15px;
 	bottom: 50%;
 	transition: background .7s ease;
   width:50px;
-  margin-right: 26px;
+  margin-right: 16px;
+}
+
+.small-social-media {
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.small-social-media a i{
+  color: #6A9FC9;
+  padding: 0px 5px 0px 5px;
+
+}
+.small-social-media a i:hover {
+  color: #C34A80;
 }
 
 .active {
   background-color: rgba(0,0,0,0.2);
-
 }
 
 .nav-right i{
@@ -247,102 +271,87 @@ h2 {
 .gifs{
 	margin: -213px 0px 12px 8px;
 }
-
 #slide1{
-  height: 1600px;
-  margin-bottom: 300px;
+height: 1600px;
 }
-
 #slide1 li{
 cursor: default;
-
 }
-
 #slide1 p a{
 	color: #6A9FC9;
 	padding: 0px 10px 0px 10px;
 	text-decoration: none;
-
 }
-
 #slide1 p a:hover{
 	color: #CF4A80;
 }
-
 #slide1 ul {
 	list-style-type: none;
 	padding-left: 0px;
 	color: white;
 	font-size: 20px;
 }
-
 #slide1 h2 {
 	color:white;
 	padding-top: 30px;
 }
-
 #slide1 .skills {
 	background-color: #F5D773;
 	letter-spacing: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
-
 }
 .skills-row{
 	margin-top: 45px;
-
 	font-size: 16px;
   margin-bottom: 10px;
-
 }
 .development{
 	margin-top: 50px;
-
   margin-bottom: 10px;
 }
 .fa-circle {
 	margin-left: -20px;
 }
-
 .contact {
-  margin-top: 130px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  padding-bottom: 20px;
 }
 .contact-spacing{
   margin: 10px 0px 10px 0px;
 }
+.how {
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: bottom;
+}
+/* Custom container */
+.container-fluid {
+    max-width: 1400px; // Custom max width for this layout
+}
+
 /******************************
  SLIDE 2
 *******************************/
 #slide2{
   height: 2000px;
 }
-
 /******************************
  SLIDE 3
 *******************************/
-
-
+#slide3{
+  height: 1100px;
+  padding-top:100px;
+}
 .button {
 margin-top: 14px;
 text-align: right;
 }
-
-
-.budget {
-}
-
 .budget-buttons {
-  margin-top: 22px;
-
+  margin-top: 10px;
+  padding-left: 17px;
+  z-index: 5;
 }
-
-#slide3{
-  height: 72em;
-  padding-top:50px;
-
-}
-
-.inline {
-  display: inline-block;
+.contact-form {
+  padding-bottom: 50%;
 }
