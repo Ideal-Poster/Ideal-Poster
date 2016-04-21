@@ -32,6 +32,8 @@ jQuery(document).ready(function ($) {
 
     //Cache some variables
     var links = $('.navigation').find('li');
+    var links2 = $('.nav li').find('a');
+
     slide = $('.slide');
     mywindow = $(window);
     htmlbody = $('html,body');
@@ -125,5 +127,11 @@ jQuery(document).ready(function ($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
+    links2.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+    });
+
 
 });
