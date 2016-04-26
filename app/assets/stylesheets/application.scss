@@ -24,6 +24,7 @@
   font-family: "Lucida Grande Regular";
   src: url(/assets/LucidaGrande.ttc) format("truetype");
 }
+
 h3 {
   font-size: 23px;
 }
@@ -91,8 +92,7 @@ h3 {
 //application
 .header {
   letter-spacing: -1px;
-  line-height: 1;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 0px;
   margin-left: 15px;
   margin-top: 40px;
@@ -106,7 +106,7 @@ body {
   letter-spacing: -1px;
   transition: background .4s ease;
   background: #015AA0;
-  font-family: "Lucida Grande Regular";
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-weight: 100;
 }
 .navigation {
@@ -126,9 +126,7 @@ body {
   cursor: pointer;
 }
 h2 {
-  font-family: "Lucida Grande Regular";
-  font-size: 30px;
-  font-weight: 100;
+  font-size: 25px;
   letter-spacing: 1px;
 }
 #sidebar li a#logo {
@@ -145,13 +143,14 @@ h2 {
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 0;
+  font-family: "Lucida Grande Regular";
 }
 
 .pageselect {
-  color: #ffffff;
   line-height: 1.4;
   font-size: 15px;
-  width: 73px;
+  width: 92px;
+
 }
 
 #logo-spacing {
@@ -187,6 +186,7 @@ h2 {
   z-index: 20;
   left: -5px;
   font-size: 16px;
+  color: blue;
 }
 
 .nav-right {
@@ -213,15 +213,14 @@ h2 {
   color: #C34A80;
 }
 .active {
-  background-color: rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .6);
 }
 
 .nav-right i {
   padding: 15px 0px 15px 0px;
 }
 
-
-.fa-circle {
+.fa-flash {
   font-size: 200px;
   z-index: 1;
   color: #224687;
@@ -243,6 +242,7 @@ h2 {
   letter-spacing: 1px;
   text-align: center;
   padding: 6px 6px -20px 6px;
+
 }
 
 
@@ -286,6 +286,7 @@ h2 {
   margin-top: 50px;
   font-size: 16px;
   margin-bottom: 10px;
+
 }
 
 .development {

@@ -22,6 +22,7 @@
 //= require_tree .
 
 jQuery(document).ready(function ($) {
+  $('.pageselectcolor').css('color', '#ffffff');
   $(".horizontal-form").validate();
 //angularjs
   angular.module('Ideal_Poster', [])
@@ -59,6 +60,7 @@ jQuery(document).ready(function ($) {
       dataslide = $(this).attr('data-slide');
       if (direction === 'down') {
       $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+
       }
       else {
       $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active');
@@ -86,6 +88,7 @@ jQuery(document).ready(function ($) {
               var pageSelectColor = elem.data('pageselectcolor');
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
+
 
               $('body').css('background-color', bgColor);
               $('.nav-right i, .small-social-media a i').css('color', navrightColor);
