@@ -150,19 +150,19 @@
   <div class="slide"
     id="slide3"
     data-slide="3"
-    data-background="#eae9e2"
+    data-background="#EAEAE8"
     data-navright="#C4AD8D"
     data-logobackground="#F3FCFC"
     data-logo="#3fd0d3"
     data-pageselectcolor="#3B3B3B"
-    data-highlightright="#EDD8A1"
+    data-highlightright="#EAC767"
     data-highlightleft="#C4AD8D">
 
-    <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
+    <div class="col-sm-offset-2 col-xs-12 col-sm-8 col-md-8">
       <h2 class="contact">CONTACT</h2>
-        <%= simple_form_for @contact do |f| %>
+        <%= simple_form_for @contact, :html => { :class => 'horizontal-form contact-form' } do |f| %>
         <div class="contact-spacing">
-          <%= f.input :name,:required => true, :html => { :class => 'contact-style' } %>
+          <%= f.input :name,:required => true %>
         </div>
         <div class="contact-spacing">
           <%= f.input :email, :required => true %>
@@ -173,17 +173,18 @@
         </div>
         <div class="row">
           <div class="budget-buttons col-xs-6">
-            <div>
-              Budget: &nbsp;
-            </div>
-            <%= f.radio_button :budget,'$',:checked => true%> Modest &nbsp;
-            <%= f.radio_button :budget,'$$'%> Bold &nbsp;
-            <%= f.radio_button :budget,'$$$'%> Extravogant
+            Budget: &nbsp;
+            <%= f.radio_button :budget,'$',:checked => true%>$ &nbsp;
+            <%= f.radio_button :budget,'$$'%>$$ &nbsp;
+            <%= f.radio_button :budget,'$$$'%>$$$
           </div>
+
           <div class="form-actions button col-sm-6">
-            <%= f.button :submit, 'Send message', :class=> "btn btn-info" %>
+            <%= f.button :submit, 'Send message', :class=> "btn btn-danger" %>
           </div>
         </div>
+
+
       <% end %>
     </div>
   </div>
