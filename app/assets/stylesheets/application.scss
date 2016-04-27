@@ -154,7 +154,7 @@ h2 {
 }
 
 #logo-spacing {
-  padding-bottom: 85px;
+  padding-bottom: 15px;
 }
 
 .me {
@@ -171,9 +171,9 @@ h2 {
 }
 #name {
   opacity: 0.9;
-  font-size: 36px;
+  font-size: 38px;
   margin-left: -155px;
-  margin-top: 215px;
+  margin-top: 280px;
   -ms-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
@@ -213,7 +213,7 @@ h2 {
   color: #C34A80;
 }
 .active {
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, .6);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .nav-right i {
@@ -249,6 +249,14 @@ h2 {
 /******************************
  SLIDE 1
 **/
+
+.simple_form div.input:focus {
+    border: 1px solid #ff0000; /* red */
+}
+.simple_form div.input {
+    color: #ff0000; /* red */
+}
+
 .gifs {
   margin: -213px 0px 12px 8px;
 }
