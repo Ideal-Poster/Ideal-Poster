@@ -83,8 +83,10 @@ h3 {
   cursor: pointer;
   text-decoration: none;
 }
+
 .icon-bar {
-  background-color: #C34A80;}
+  background-color: #C34A80;
+}
 
 .description {
   color: white;
@@ -242,7 +244,6 @@ h2 {
   letter-spacing: 1px;
   text-align: center;
   padding: 6px 6px -20px 6px;
-
 }
 
 
@@ -291,19 +292,13 @@ h2 {
   padding-right: 6px;
 }
 .skills-row {
-  margin-top: 50px;
+  padding-top: 20px;
   font-size: 16px;
   margin-bottom: 10px;
 
 }
 
-.development {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-.fa-circle {
-  margin-left: -20px;
-}
+
 .contact {
   margin-top: 50px;
   padding-bottom: 20px;
@@ -320,7 +315,7 @@ h2 {
 /* Custom container
 **/
 .container-fluid {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 /*SLIDE 2
 */
@@ -345,4 +340,10 @@ h2 {
   margin-top: 10px;
   padding-left: 17px;
   z-index: 1;
+}
+#search{
+  border-radius:0px;
+}
+.development {
+
 }
