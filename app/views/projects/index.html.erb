@@ -1,5 +1,5 @@
       <!-- Small Screen Top Navbar  -->
-<nav role="navigation" class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+<nav role="navigation" class="navbar navbar-default hidden-md hidden-lg">
   <div id="navbarCollapse" class="collapse navbar-collapse">
     <div class="col-xs-12 center">
       <ul class="nav navbar-nav">
@@ -26,13 +26,15 @@
 </nav>
       <!-- Large Screen Left Navbar  -->
 <div class="column col-xs-2">
-  <ul class="nav-left navigation hidden-xs title-spacing" id="sidebar">
+  <ul class="nav-left navigation hidden-sm hidden-xs title-spacing" id="sidebar">
     <li id="logo-spacing"><a id="logo" href="#">M</a></li>
     <li class="pageselect pageselectcolor" data-slide="1">Home</li>
     <li class="pageselect pageselectcolor" data-slide="2">Portfolio</li>
     <li class="pageselect pageselectcolor" data-slide="3">Contact</li>
     <li class="pageselectcolor" id="name">MALCOLM GOURDINE</li>
   </ul>
+
+
 </div>
       <!-- Slide 1 -->
 <div class="container-fluid">
@@ -179,9 +181,9 @@
         <div class="row">
           <div class="budget-buttons col-xs-6">
             Budget: &nbsp;
-            <%= f.radio_button :budget,'$',:checked => true%>$ &nbsp;
-            <%= f.radio_button :budget,'$$'%>$$ &nbsp;
-            <%= f.radio_button :budget,'$$$'%>$$$
+            <%= f.radio_button :budget,'small',:checked => true%>Small &nbsp;
+            <%= f.radio_button :budget,'medium'%>Medium &nbsp;
+            <%= f.radio_button :budget,'large'%>Grand
           </div>
 
           <div class="form-actions button col-sm-6">
@@ -192,12 +194,11 @@
       <% end %>
     </div>
   </div>
-
 </div>
 
 <!-- nav-right -->
 
-<ul class="navigation nav-right affix hidden-xs">
+<ul class="navigation nav-right affix hidden-sm hidden-xs">
   <a href="#">
     <i class="fa fa-twitter fa-2x"></i>
   </a>

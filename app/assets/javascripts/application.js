@@ -64,7 +64,6 @@ jQuery(document).ready(function ($) {
         $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
         $(".pageselectcolor").mouseover();
         $(".pageselectcolor").mouseout();
-
       }
     });
 
@@ -84,6 +83,13 @@ jQuery(document).ready(function ($) {
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
 
+              $('body').css('background-color', bgColor);
+              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
+              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
+              $('#sidebar li a#logo').css('color', logoColor);
+              $('.pageselectcolor').css('color', pageSelectColor);
+              $('.active').css('color', highlightLeftColor)
+
               $(".nav-right i, .small-social-media a i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
               });
@@ -100,14 +106,6 @@ jQuery(document).ready(function ($) {
                   $(this).css("color", highlightLeftColor);
                 }
               });
-
-              $('body').css('background-color', bgColor);
-              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
-              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
-              $('#sidebar li a#logo').css('color', logoColor);
-              $('.pageselectcolor').css('color', pageSelectColor);
-              $('.active').css('color', highlightLeftColor)
-
 
             }
           });
