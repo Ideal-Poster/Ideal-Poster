@@ -216,7 +216,7 @@ h2 {
   color: #C34A80;
 }
 .active {
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+
 }
 
 .nav-right i {
@@ -330,16 +330,13 @@ h2 {
 */
 #slide3 {
   height: 59em;
-  padding-top: 125px;
+  padding-top: 104px;
 }
 .button {
   margin-top: 14px;
   text-align: right;
 }
-.btn-info {
-  background-color: #B83F3F;
-  border-color: #B00305;
-}
+
 .budget-buttons {
   margin-top: 10px;
   padding-left: 17px;
@@ -360,7 +357,7 @@ h2 {
 
 .contact-spacing {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 
@@ -385,4 +382,15 @@ input[type="color"]:focus,
   box-shadow: none;
   outline: 0 none;
   border-width: thin;
+ }
+.btn-danger:hover{
+  background-color: #52A5A6;
+}
+ .btn-danger {
+   background-color: #288F90;
+   border: none;
+ }
+
+ .name, .email {
+   height: 28px;
  }

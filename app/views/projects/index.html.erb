@@ -163,11 +163,11 @@
         <%= form_for @contact do |f| %>
 
         <div class="contact-spacing">
-          <%= f.text_field :name,:required => true, class: 'full-width' %>
+          <%= f.text_field :name,:required => true, class: 'name full-width' %>
         </div>
 
         <div class="contact-spacing">
-          <%= f.text_field :email, :required => true, class: 'full-width' %>
+          <%= f.text_field :email, :required => true, class: 'email full-width' %>
         </div>
 
           <%= f.text_area :message, :as => :text, :required => false, class: 'message full-width' %>

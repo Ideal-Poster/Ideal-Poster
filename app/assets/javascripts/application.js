@@ -57,23 +57,20 @@ jQuery(document).ready(function ($) {
     }, { offset: '1%'});
     slide.waypoint(function (direction) {
       dataslide = $(this).attr('data-slide');
-      if (direction === 'down') {
-      $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+      if (direction === 'up') {
+        $('.navigation li[data-slide="' + (dataslide - 1 ) + '"]').addClass('active').next().removeClass('active');
       }
-      else {
-      $('.navigation li[data-slide="' + (dataslide-1) + '"]').addClass('active').next().removeClass('active');
+      if (direction === 'down') {
+        $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+        $(".pageselectcolor").mouseover();
+        $(".pageselectcolor").mouseout();
+
       }
     });
 
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     //from navigation link slide 2 and adds it to navigation link slide 1.
-    mywindow.scroll(function () {
-      if (mywindow.scrollTop() == 0) {
-        $('.navigation li[data-slide="1"]').addClass('active');
-        $('.navigation li[data-slide="2"]').removeClass('active');
-        $('.navigation li[data-slide="3"]').removeClass('active');
-      }
-    });
+
     mywindow.ready(function() {
       $('.slide')
           .scrollie({
@@ -87,12 +84,6 @@ jQuery(document).ready(function ($) {
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
 
-              $('body').css('background-color', bgColor);
-              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
-              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
-              $('#sidebar li a#logo').css('color', logoColor);
-              $('.pageselectcolor').css('color', pageSelectColor);
-
               $(".nav-right i, .small-social-media a i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
               });
@@ -103,12 +94,21 @@ jQuery(document).ready(function ($) {
                 $(this).css("color", highlightLeftColor);
               });
               $(".navigation li").mouseout(function(){
-              //  if ( !($( this ).hasClass( "active" )) ) {
+                if ( !($( this ).hasClass( "active" )) ) {
                   $(this).css("color", pageSelectColor);
-                //} else {
-                //  $(this).css("color", highlightLeftColor);
-              //  }
+                } else {
+                  $(this).css("color", highlightLeftColor);
+                }
               });
+
+              $('body').css('background-color', bgColor);
+              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
+              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
+              $('#sidebar li a#logo').css('color', logoColor);
+              $('.pageselectcolor').css('color', pageSelectColor);
+              $('.active').css('color', highlightLeftColor)
+
+
             }
           });
     });
