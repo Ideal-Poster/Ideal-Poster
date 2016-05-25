@@ -25,6 +25,7 @@
   src: url(/assets/LucidaGrande.ttc) format("truetype");
 }
 
+
 h3 {
   font-size: 23px;
 }
@@ -97,7 +98,7 @@ h3 {
   font-size: 38px;
   margin-bottom: 0px;
   margin-left: 15px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .tag_line {
   color: white;
@@ -141,11 +142,11 @@ h2 {
   margin-top: -3px;
   margin-bottom: 15px;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 0;
-  font-family: "Lucida Grande Regular";
+  font-family: "Open Sans";
 }
 
 .pageselect {
@@ -184,7 +185,7 @@ h2 {
 }
 
 .nav-left {
-  top: 70px;
+  top: 44px;
   z-index: 20;
   left: -5px;
   font-size: 16px;
@@ -259,7 +260,7 @@ h2 {
 }
 
 .gifs {
-  margin: -213px 0px 12px 8px;
+  margin: -213px 0px 0px 8px;
 }
 #slide1 {
   height: 2100px;
@@ -292,9 +293,9 @@ h2 {
   padding-right: 6px;
 }
 .skills-row {
-  padding-top: 20px;
+  margin-top: 45px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
 }
 
@@ -303,15 +304,18 @@ h2 {
   margin-top: 50px;
   padding-bottom: 20px;
 }
-.contact-spacing {
-  margin: 10px 0px 10px 0px;
-}
+
 .how {
   display: inline-block;
   line-height: 1.1;
   letter-spacing: 0px;
   font-size: 16px;
 }
+
+.design-row {
+  margin-top: 100px;
+}
+
 /* Custom container
 **/
 .container-fluid {
@@ -325,8 +329,8 @@ h2 {
 /*SLIDE 3
 */
 #slide3 {
-  height: 1100px;
-  padding-top: 100px;
+  height: 59em;
+  padding-top: 125px;
 }
 .button {
   margin-top: 14px;
@@ -341,9 +345,44 @@ h2 {
   padding-left: 17px;
   z-index: 1;
 }
-#search{
-  border-radius:0px;
-}
-.development {
+
+.message {
+  height: 200px;
+
+
 
 }
+
+.full-width {
+  width: 100%;
+  border: 1px solid #EAEAE8;
+}
+
+.contact-spacing {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="query"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #EAC767;
+  box-shadow: none;
+  outline: 0 none;
+  border-width: thin;
+ }
