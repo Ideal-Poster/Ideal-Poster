@@ -22,7 +22,10 @@
 //= require_tree .
 
 jQuery(document).ready(function ($) {
-  $(".horizontal-form").validate();
+  $('.horizontal-form').validate();
+  $('.pageselectcolor').css('color', 'white');
+  $('.home').css('color', '#6A9FC9')
+
 //angularjs
   angular.module('Ideal_Poster', [])
     .controller('mainController', function($scope) {
@@ -33,6 +36,7 @@ jQuery(document).ready(function ($) {
     //Cache some variables
     var links = $('.navigation').find('li');
     var links2 = $('.nav li').find('a');
+
 
     slide = $('.slide');
     mywindow = $(window);
@@ -73,7 +77,7 @@ jQuery(document).ready(function ($) {
     mywindow.ready(function() {
       $('.slide')
           .scrollie({
-            scrollOffset : -300,
+            scrollOffset : 0,
             scrollingInView : function(elem) {
               var bgColor = elem.data('background');
               var navrightColor = elem.data('navright');

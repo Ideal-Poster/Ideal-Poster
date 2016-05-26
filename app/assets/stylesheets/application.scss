@@ -153,7 +153,7 @@ h2 {
   line-height: 1.4;
   font-size: 15px;
   width: 92px;
-color: blue;
+
 }
 
 #logo-spacing {
@@ -228,6 +228,7 @@ color: blue;
   font-size: 200px;
   z-index: 1;
   color: #224687;
+  vertical-align: middle;
 }
 
 .center {
@@ -340,7 +341,7 @@ color: blue;
 
 .budget-buttons {
   margin-top: 10px;
-  padding-left: 17px;
+
   z-index: 1;
 }
 
@@ -390,8 +391,9 @@ input[type="color"]:focus,
  .btn-danger {
    background-color: #288F90;
    border: none;
+   right: 0;
  }
 
  .name, .email {
    height: 28px;
- }
+}
