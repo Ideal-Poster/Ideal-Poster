@@ -1,3 +1,386 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+h3 {
+  font-size: 23px;
+}
+
+body {
+  transition: background .4s ease;
+  background-color: #015AA0;
+}
+
+//Bootstrap Navbar
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #C34A80;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
+}
+.navbar-default .navbar-toggle:hover span {
+  background-color: #9C3B66;
+}
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+  border-color: #224687;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav {
+  color: #ffffff;
+}
+.navbar-collapse.collapse.in {
+  display:block!important;
+}
+.navbar-default {
+  background-color: #224687;
+  border: none;
+  height:70px;
+}
+.navbar-toggle .icon-bar {
+  background-color: #c34a80;
+}
+.navbar-brand a {
+  color: #ffffff;
+  letter-spacing: 0px;
+}
+.navbar-toggle, .navbar-toggle:hover {
+  background-color: #224687;
+  border: none;
+}
+.navbar-brand a,.nav.navbar-nav li a {
+  color: #FFFFFF
+}
+.navbar-brand a:hover ,.nav.navbar-nav li a:hover {
+  color: #5F97C4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon-bar {
+  background-color: #C34A80;
+}
+
+.description {
+  color: white;
+}
+//application
+.header {
+  letter-spacing: -1px;
+  font-size: 38px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.tag_line {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: -20px;
+}
+
+.navigation {
+  z-index:1;
+  position: fixed;
+}
+.navigation li {
+  color: #131313;
+  display: block;
+  padding: 0 10px;
+  line-height: 30px;
+  margin-bottom: 2px;
+  -webkit-transition: all .1s ease-in-out;
+  text-align: left;
+}
+.navigation li:hover {
+  cursor: pointer;
+}
+h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#sidebar li a#logo {
+  display: block;
+  padding: 6px;
+  background-color: #015AA0;
+  color: #C34A80;
+  height: 40px;
+  width: 40px;
+  margin-top: -3px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 0;
+  font-family: "Open Sans";
+}
+
+.pageselect {
+  line-height: 1.4;
+  font-size: 15px;
+  width: 92px;
+
+}
+
+#logo-spacing {
+  padding-bottom: 15px;
+}
+
+.me {
+  opacity: 0;
+  transition: all .4s ease-in;
+  margin-top: -25px;
+  height: auto;
+  max-height: 220px;
+}
+
+.js-me-animate {
+  opacity: 0.9;
+  margin-top: 25px;
+}
+#name {
+  opacity: 0.9;
+  font-size: 38px;
+  margin-left: -155px;
+  margin-top: 280px;
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.nav-left {
+  top: 44px;
+  z-index: 20;
+  left: -5px;
+  font-size: 16px;
+  color: white;
+
+}
+
+.nav-right {
+  right: 24px;
+  height: 80px;
+  padding-right: 15px;
+  bottom: 50%;
+  transition: background .7s ease;
+  width: 50px;
+  margin-right: 16px;
+}
+.small-social-media {
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.small-social-media a i {
+  color: #6A9FC9;
+  padding: 0px 5px 0px 5px;
+}
+.small-social-media a i:hover {
+  color: #C34A80;
+}
+.active {
+
+}
+
+.nav-right i {
+  padding: 15px 0px 15px 0px;
+}
+
+.fa-flash {
+  font-size: 200px;
+  z-index: 1;
+  color: #224687;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.slide {
+  width: 100%;
+  padding: 0;
+}
+
+.skills {
+  display: block;
+  background-color: #F5D773;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 6px 6px -20px 6px;
+}
+
+
+/******************************
+ SLIDE 1
+**/
+
+.simple_form div.input:focus {
+    border: 1px solid #ff0000; /* red */
+}
+.simple_form div.input {
+    color: #ff0000; /* red */
+}
+
+.gifs {
+  margin: -213px 0px 0px 8px;
+}
+#slide1 {
+  height: 2100px;
+}
+#slide1 li {
+  cursor: default;
+}
+#slide1 p a {
+  color: #6A9FC9;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+}
+#slide1 p a:hover {
+  color: #CF4A80;
+}
+#slide1 ul {
+  list-style-type: none;
+  padding-left: 0px;
+  color: white;
+  font-size: 20px;
+}
+#slide1 h2 {
+  color:white;
+  padding-top: 30px;
+}
+#slide1 .skills {
+  background-color: #F5D773;
+  letter-spacing: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.skills-row {
+  margin-top: 45px;
+  font-size: 16px;
+  margin-bottom: 20px;
+
+}
+
+.contact {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.how {
+  display: inline-block;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.design-row {
+  margin-top: 100px;
+}
+
+/* Custom container
+**/
+.container-fluid {
+  max-width: 1500px;
+}
+/*SLIDE 2
+*/
+#slide2 {
+  height: 1600px;
+}
+/*SLIDE 3
+*/
+#slide3 {
+  height: 59em;
+  padding-top: 104px;
+}
+.button {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.budget-buttons {
+  margin-top: 10px;
+
+  z-index: 1;
+}
+
+.message {
+  height: 200px;
+
+
+
+}
+
+.full-width {
+  width: 100%;
+  border: 1px solid #EAEAE8;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.contact-spacing {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="query"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #EAC767;
+  box-shadow: none;
+  outline: 0 none;
+  border-width: thin;
+ }
+
+
+.btn:hover, .btn:active {
+  background-color: #52A5A6;
+  color: white;
+  border-color: #EAC767;
+  box-shadow: none;
+  outline: 0 none;
+  border-width: thin;
+}
+ .btn {
+   color:white;
+   background-color: #288F90;
+   border: none;
+   right: 0;
+ }
+
+ .name, .email {
+   height: 28px;
+}

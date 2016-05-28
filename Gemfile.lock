@@ -98,6 +98,7 @@ GEM
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
+    jquery-countdown-rails (2.0.2)
     jquery-easing-rails (0.0.2)
       railties (>= 3.1.0)
     jquery-rails (4.1.0)
@@ -227,6 +228,7 @@ DEPENDENCIES
   guard-livereload
   guard-rails
   jbuilder (~> 2.0)
+  jquery-countdown-rails
   jquery-easing-rails
   jquery-rails
   jquery-validation-rails
