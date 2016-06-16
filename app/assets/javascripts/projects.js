@@ -1,10 +1,15 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
+
+
+
+
 jQuery(document).ready(function ($) {
   $('.horizontal-form').validate();
   $('.pageselectcolor').css('color', 'white');
   $('.home').css('color', '#6A9FC9')
+
 
 //angularjs
   angular.module('Ideal_Poster', [])
@@ -54,9 +59,23 @@ jQuery(document).ready(function ($) {
     //from navigation link slide 2 and adds it to navigation link slide 1.
 
     mywindow.ready(function() {
+      var wHeight = $(window).height();
+      var offset
+      var currentPage = window.location.href;
+
+      setInterval(function() {
+          currentPage = window.location.href;
+          $('#slide1').css( 'height', $('.inside1').height() );
+          $('#slide2').css( 'height', $('.inside2').height * 3 );
+          $('#slide3').css( ($(window).height() * 1.07) );
+          wHeight = $(window).height();
+      }, 500);
+
+
       $('.slide')
+        .height(wHeight)
           .scrollie({
-            scrollOffset : 0,
+            scrollOffset : -600,
             scrollingInView : function(elem) {
               var bgColor = elem.data('background');
               var navrightColor = elem.data('navright');

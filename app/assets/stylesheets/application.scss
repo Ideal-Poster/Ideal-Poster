@@ -32,6 +32,13 @@ body {
   letter-spacing: -1px;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-weight: 100;
+  transition: background .4s ease;
+  background-color: #015AA0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
 }
 
 .back {
@@ -42,4 +49,10 @@ body {
 
 .back:hover {
   color: #D62D20;
+}
+
+@media (max-height:650px) {
+  #name {
+    opacity: 0.2;
+  }
 }

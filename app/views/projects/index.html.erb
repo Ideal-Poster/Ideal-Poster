@@ -34,8 +34,9 @@
       <li class="pageselect pageselectcolor home" data-slide="1">Home</li>
       <li class="pageselect pageselectcolor" data-slide="2">Portfolio</li>
       <li class="pageselect pageselectcolor" data-slide="3">Contact</li>
-      <li class="pageselectcolor" id="name">MALCOLM GOURDINE</li>
+
     </ul>
+    <p class="hidden-sm hidden-xs" id="name">MALCOLM GOURDINE</p>
 
   </div>
         <!-- Slide 1 -->
@@ -48,12 +49,13 @@
     <div class="slide" id="slide1"
       data-background="#015AA0"
       data-navright="#6A9FC9"
-      data-logobackground="#015AA0"
+      data-logobackground="transparent"
       data-logo="#C34A80"
       data-pageselectcolor="#ffffff"
       data-highlightright="#C34A80"
       data-highlightleft="#6A9FC9"
       data-slide="1">
+      <div class="inside1">
       <div class="row">
         <h2 class="header title-spacing">
           Full stack web development using the latest frameworks like -
@@ -134,7 +136,7 @@
           </ul>
         </div>
 
-
+      </div>
     </div>
 
     <!--Slide 2-->
@@ -148,7 +150,9 @@
         data-pageselectcolor="#FFFFFF"
         data-highlightright="#E94F0A"
         data-highlightleft="#E49F27">
-
+        <div class="inside2">
+          <%= image_tag("Project_1", height: "200") %>
+        </div>
     </div>
 
     <!--Slide 3-->
@@ -163,58 +167,61 @@
       data-pageselectcolor="#3B3B3B"
       data-highlightright="#EAC767"
       data-highlightleft="#C4AD8D">
+      <div class="inside3">
+        <div class="col-sm-offset-2 col-xs-12 col-sm-8 col-md-8">
+          <h2 class="contact">CONTACT</h2>
+            <%= form_for @contact, html: { class: "horizontal-form contact-form" } do |f| %>
 
-      <div class="col-sm-offset-2 col-xs-12 col-sm-8 col-md-8">
-        <h2 class="contact">CONTACT</h2>
-          <%= form_for @contact, html: { class: "horizontal-form contact-form" } do |f| %>
+            <div class="contact-spacing">
+              <%= f.text_field :name,
+                  required: true,
+                  class: 'name full-width',
+                  placeholder: "Name" %>
+            </div>
 
-          <div class="contact-spacing">
-            <%= f.text_field :name,
-                required: true,
-                class: 'name full-width',
-                placeholder: "Name" %>
-          </div>
+            <div class="contact-spacing">
+              <%= f.text_field :email,
+                  required: true,
+                  class: 'email full-width',
+                  placeholder: "Email" %>
+            </div>
 
-          <div class="contact-spacing">
-            <%= f.text_field :email,
-                required: true,
-                class: 'email full-width',
-                placeholder: "Email" %>
-          </div>
+              <%= f.text_area :message,
+                  :as => :text,
+                  required: false,
+                  class: 'message full-width',
+                  placeholder: "Message"   %>
 
-            <%= f.text_area :message,
-                :as => :text,
-                required: false,
-                class: 'message full-width',
-                placeholder: "Message"   %>
+            <div class="hidden">
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
 
-          <div class="hidden">
-            <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-          </div>
+            <div class="row">
+              <div class="budget-buttons col-xs-7">
+                Budget: &nbsp;
+                <div style="display:inline-block;">
+                  <%= f.radio_button :budget,'small',:checked => true%>Small &nbsp;
+                </div>
 
-          <div class="row">
-            <div class="budget-buttons col-xs-7">
-              Budget: &nbsp;
-              <div style="display:inline-block;">
-                <%= f.radio_button :budget,'small',:checked => true%>Small &nbsp;
+                <div style="display:inline-block;">
+                  <%= f.radio_button :budget,'medium'%>Medium &nbsp;
+                </div>
+
+                <div style="display:inline-block;">
+                  <%= f.radio_button :budget,'large'%>Grand
+                </div>
               </div>
 
-              <div style="display:inline-block;">
-                <%= f.radio_button :budget,'medium'%>Medium &nbsp;
-              </div>
-
-              <div style="display:inline-block;">
-                <%= f.radio_button :budget,'large'%>Grand
+              <div class="form-actions button col-sm-5" style="right:0;">
+                <%= f.submit 'Send message', :class=> "btn" %>
               </div>
             </div>
 
-            <div class="form-actions button col-sm-5" style="right:0;">
-              <%= f.submit 'Send message', :class=> "btn" %>
-            </div>
-          </div>
+          <% end %>
+        </div>
 
-        <% end %>
       </div>
+
     </div>
   </div>
 
