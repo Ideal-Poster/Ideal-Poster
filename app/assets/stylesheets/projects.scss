@@ -137,6 +137,11 @@ h2 {
   padding-bottom: 15px;
 }
 
+.image {
+  height:230px;
+  margin-bottom: 10px;
+}
+
 .me {
   opacity: 0;
   transition: all .4s ease-in;
@@ -248,7 +253,7 @@ h2 {
   margin: -213px 0px 0px 8px;
 }
 #slide1 {
-
+  height: 1400px;
 }
 #slide1 li {
   cursor: default;
@@ -308,14 +313,12 @@ h2 {
 /*SLIDE 2
 */
 #slide2 {
-  margin-top: 100px;
   padding-top: 100px;
-
+  height: 2100px;
 }
 /*SLIDE 3
 */
 #slide3 {
-
   padding-top: 60px;
 }
 .button {

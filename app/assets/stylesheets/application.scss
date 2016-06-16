@@ -36,9 +36,9 @@ body {
   background-color: #015AA0;
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
+body,html {
+  min-width: 530px;
+
 }
 
 .back {
@@ -51,7 +51,7 @@ body, html {
   color: #D62D20;
 }
 
-@media (max-height:650px) {
+@media (max-height:658px) {
   #name {
     opacity: 0.2;
   }

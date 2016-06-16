@@ -66,9 +66,9 @@ jQuery(document).ready(function ($) {
       setInterval(function() {
           currentPage = window.location.href;
           $('#slide1').css( 'height', $('.inside1').height() );
-          $('#slide2').css( 'height', $('.inside2').height * 3 );
-          $('#slide3').css( ($(window).height() * 1.07) );
-          wHeight = $(window).height();
+          //$('#slide2').css( 'height', $('.inside2').height * 3 );
+          //$('#slide3').css( ($(window).height() * 1.07) );
+          //wHeight = $(window).height();
       }, 500);
 
 
