@@ -8,7 +8,7 @@
 jQuery(document).ready(function ($) {
   $('.horizontal-form').validate();
   $('.pageselectcolor').css('color', 'white');
-  $('.home').css('color', '#6A9FC9')
+  $('.home, .nav-right i').css('color', '#6A9FC9');
 
 
 //angularjs
@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
           currentPage = window.location.href;
           $('#slide1').css( 'height', $('.inside1').height() );
           //$('#slide2').css( 'height', $('.inside2').height * 3 );
-          //$('#slide3').css( ($(window).height() * 1.07) );
+          $('#slide3').css( ($(window).height() * 1.2) );
           //wHeight = $(window).height();
       }, 500);
 
