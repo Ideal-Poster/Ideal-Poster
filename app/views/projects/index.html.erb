@@ -152,10 +152,18 @@
         data-highlightleft="#E49F27">
         <div class="inside2">
           <h2 class="portfolio">PORTFOLIO</h2>
+
           <% @projects.each do |project| %>
+            <div class="project">
+              <div class="project-title">  
+                <%= project.title%>
+              </div>
+
+            </div>
             <%= image_tag project.image.url(:medium) %>
+
           <% end %>
-          
+
         </div>
     </div>
 
