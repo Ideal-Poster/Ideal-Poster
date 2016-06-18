@@ -33,24 +33,26 @@ gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
 
 gem 'jquery-easing-rails'
 
+gem 'paperclip'
 
-# Forms, mail {
+
+# Forms, mail
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
-# }
 
-# Development Guard {
+
+# Development Guard
 gem 'guard-rails', group: :development
 gem 'guard-livereload', group: :development
 gem 'rack-livereload', group: :development
 gem 'guard-bundler', group: :development
-# }
 
+# Conact gems
 gem "figaro"
-
 gem 'jquery-validation-rails'
-
 gem 'jquery-countdown-rails'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
