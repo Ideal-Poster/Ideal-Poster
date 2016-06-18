@@ -59,23 +59,24 @@ jQuery(document).ready(function ($) {
     //from navigation link slide 2 and adds it to navigation link slide 1.
 
     mywindow.ready(function() {
-      var wHeight = $(window).height();
-      var offset
-      var currentPage = window.location.href;
+      var wHeight = $(window).height() ;
+
+
 
       setInterval(function() {
-          currentPage = window.location.href;
-          $('#slide1').css( 'height', $('.inside1').height() );
-          //$('#slide2').css( 'height', $('.inside2').height * 3 );
+
+          $('#slide1').css( 'height', $('.inside1').height());
+          $('#slide2').css( 'height', $('.inside2').height * 5 );
           $('#slide3').css( ($(window).height() * 1.2) );
           //wHeight = $(window).height();
-      }, 500);
+
+      }, 300);
 
 
       $('.slide')
         .height(wHeight)
           .scrollie({
-            scrollOffset : -600,
+            scrollOffset : -550,
             scrollingInView : function(elem) {
               var bgColor = elem.data('background');
               var navrightColor = elem.data('navright');
@@ -110,6 +111,10 @@ jQuery(document).ready(function ($) {
               });
 
             }
+
+
+
+
           });
     });
 
