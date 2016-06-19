@@ -10,7 +10,6 @@ jQuery(document).ready(function ($) {
   $('.pageselectcolor').css('color', 'white');
   $('.home, .nav-right i').css('color', '#6A9FC9');
 
-
 //angularjs
   angular.module('Ideal_Poster', [])
     .controller('mainController', function($scope) {
@@ -53,31 +52,24 @@ jQuery(document).ready(function ($) {
         $(".pageselectcolor").mouseover();
         $(".pageselectcolor").mouseout();
       }
-    });
+    }, { offset: '5%'});
 
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     //from navigation link slide 2 and adds it to navigation link slide 1.
 
     mywindow.ready(function() {
-      var wHeight = $(window).height() ;
-
-
-
+      var wHeight = ($('.inside1').height() * 1.1) ;
       setInterval(function() {
-
-          $('#slide1').css( 'height', $('.inside1').height());
-          $('#slide2').css( 'height', $('.inside2').height * 5 );
-          $('#slide3').css( ($(window).height() * 1.2) );
-          //wHeight = $(window).height();
-
+          $('#slide1').css( 'height', ($('.inside1').height() * 1.1));
+          $('#slide3').css( 'height', ($(window).height() * 1.1) );
       }, 300);
-
 
       $('.slide')
         .height(wHeight)
           .scrollie({
-            scrollOffset : -550,
+            scrollOffset : -600,
             scrollingInView : function(elem) {
+
               var bgColor = elem.data('background');
               var navrightColor = elem.data('navright');
               var logobackgroundColor = elem.data('logobackground');
@@ -86,12 +78,12 @@ jQuery(document).ready(function ($) {
               var highlightLeftColor = elem.data('highlightleft');
               var highlightRightColor = elem.data('highlightright');
 
-              $('body').css('background-color', bgColor);
-              $('.nav-right i, .small-social-media a i').css('color', navrightColor);
-              $('#sidebar li a#logo').css('background-color', logobackgroundColor);
-              $('#sidebar li a#logo').css('color', logoColor);
-              $('.pageselectcolor').css('color', pageSelectColor);
-              $('.active').css('color', highlightLeftColor)
+                $('body').css('background-color', bgColor);
+                $('.nav-right i, .small-social-media a i').css('color', navrightColor);
+                $('#sidebar li a#logo').css('background-color', logobackgroundColor);
+                $('#sidebar li a#logo').css('color', logoColor);
+                $('.pageselectcolor').css('color', pageSelectColor);
+                $('.active').css('color', highlightLeftColor)
 
               $(".nav-right i, .small-social-media a i").mouseover(function(){
                 $(this).css("color", highlightRightColor);
@@ -109,12 +101,7 @@ jQuery(document).ready(function ($) {
                   $(this).css("color", highlightLeftColor);
                 }
               });
-
             }
-
-
-
-
           });
     });
 

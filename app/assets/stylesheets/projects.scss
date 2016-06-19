@@ -287,12 +287,10 @@ h2 {
   margin-top: 45px;
   font-size: 16px;
   margin-bottom: 20px;
-
 }
 
 .contact {
-  margin-top: 50px;
-  padding-bottom: 20px;
+  margin-top: 200px;
 }
 
 .how {
@@ -316,7 +314,8 @@ h2 {
 #slide2 {
   color: white;
   padding-top: 60px;
-  margin-top: -10px;
+  height: 2000px;
+
 }
 
 .project-title {
@@ -338,7 +337,7 @@ h2 {
   -webkit-transition: all .2s ease-in-out;
   vertical-align: bottom;
   color: transparent;
-
+  cursor: pointer;
 }
 
 .project:hover {
@@ -346,13 +345,19 @@ h2 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.modal-content {
+  border-radius: 0;
+  background-color: #F1F1F1;
+  color: black;
+
+}
+
 /*SLIDE 3
 */
 #slide3 {
-  padding-top: 10%;
-  margin-top: -10px;
 
 }
+
 .button {
   margin-top: 14px;
   text-align: right;
@@ -360,7 +365,6 @@ h2 {
 
 .budget-buttons {
   margin-top: 10px;
-
   z-index: 1;
 }
 
