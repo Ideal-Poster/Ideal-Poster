@@ -28,6 +28,13 @@
   src: url(/assets/LucidaGrande.ttc) format("truetype");
 }
 
+.modal-dialog {
+  width: auto;
+  margin-right: 20%;
+  margin-left: 20%;
+  min-width: 400px;
+}
+
 body {
   letter-spacing: -1px;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -56,4 +63,21 @@ body,html {
   #name {
     opacity: 0.2;
   }
+}
+
+@media (max-width:1110px) {
+  .how {
+    // max-width: 350px;
+    margin-left: 220px;
+    margin-top: -10px;
+  }
+}
+
+.image {
+  width:300px;
+  height:188px;
+}
+
+.modal-images {
+  text-align: left;
 }

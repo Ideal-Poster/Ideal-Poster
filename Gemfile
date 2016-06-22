@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem "refile", require: 'refile/rails', git: "https://github.com/refile/refile.git"
+gem "refile-mini_magick"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use Postgres as the database for Active Record

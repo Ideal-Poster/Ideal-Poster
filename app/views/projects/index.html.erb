@@ -51,9 +51,9 @@
       data-navright="#6A9FC9"
       data-logobackground="transparent"
       data-logo="#C34A80"
-      data-pageselectcolor="#ffffff"
+      data-pageselectcolor="#6A9FC9"
       data-highlightright="#C34A80"
-      data-highlightleft="#6A9FC9"
+      data-highlightleft="#C34A80"
       data-slide="1">
       <div class="inside1">
       <div class="row">
@@ -69,13 +69,13 @@
           <p class="skills">skills</p>
         </div>
         <p>
-          <a href="">Html</a> <a href="">CSS</a><a href="">JavaScript</a>
-          <a href="">AngularJS</a> <a href="">Ruby on Rails</a>
-          <a href="">Postgres</a>
+          <a>Html</a> <a>CSS</a><a>JavaScript</a>
+          <a>AngularJS</a> <a>Ruby on Rails</a>
+          <a>Postgres</a>
         </p>
       </div>
 
-      <div class="row design-ro">
+      <div class="row design-row">
         <div class="col-xs-6 col-sm-5">
           <ul>
             <h3>DESIGN</h3>
@@ -106,11 +106,11 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-5 image">
+        <div class="col-xs-1 image">
           <%= image_tag("me.png", class: "me img-responsive") %>
         </div>
 
-        <div class="col-sm-6 col-md-6 description how">
+        <div class="col-xs-7 description how">
           <h3 class="title-spacing">How I Work</h3>
           <p>
             When you choose to work with Malcolm Gourdine you're buying a high standard
@@ -154,14 +154,16 @@
         data-highlightleft="#E49F27">
         <div class="inside2">
           <h2 class="portfolio">PORTFOLIO</h2>
-
           <% @projects.each do |project| %>
             <div class="project" data-toggle="modal" data-target="#myModal">
-              <div class="project-title">
-                <%= project.title %>
-              </div>
+                <%= attachment_image_tag(project.images.first, :file, :fit, 800, 800, format: "jpg", class: "image") %>
+                <div class="project-title">
+                  <%= project.title %>
+                </div>
+                <%= project.created_at.strftime('%b %d %Y') %>
             </div>
-            <%= image_tag project.image.url(:medium) %>
+
+
 
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
@@ -176,7 +178,14 @@
                     </h4>
                   </div>
                   <div class="modal-body">
-                    <%= image_tag project.image.url(:medium) %>
+                    <div class="row modal-images">
+                      <% project.images.each do |i| %>
+                        <a href="<%= project.link %>" target="_blank">
+                          <%= attachment_image_tag(i, :file, :limit, 500, 500, format: "jpg") %>
+                        </a>
+                      <% end %>
+                    </div>
+
                     <p><%= project.description %></p>
                   </div>
                   <div class="modal-footer">

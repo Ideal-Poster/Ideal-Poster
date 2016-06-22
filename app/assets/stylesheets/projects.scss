@@ -88,7 +88,6 @@ body {
   font-weight: lighter;
   margin-bottom: -20px;
 }
-
 .navigation {
   z-index:1;
   position: fixed;
@@ -144,16 +143,16 @@ h2 {
 
 .me {
   opacity: 0;
-  transition: all .4s ease-in;
-  margin-top: -25px;
-  height: auto;
-  max-height: 220px;
+  transition: all 0.5s ease;
+  margin-top: 200px;
+  max-width: 360px;
 }
 
 .js-me-animate {
   opacity: 0.9;
   margin-top: 25px;
 }
+
 #name {
   position: fixed;
   bottom: 0;
@@ -164,11 +163,11 @@ h2 {
   -ms-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
-  color: #ffffff;
+  color: #FFFFFF;
   line-height: 1.4;
   margin-left: -133px;
   margin-bottom: 228px;
-  background-color: #db1e1e;
+  background-color: #c93e3e;
   padding-left: 15px;
 }
 
@@ -178,6 +177,7 @@ h2 {
   left: -5px;
   font-size: 16px;
   color: white;
+  transition: color 0.5s ease;
 
 }
 
@@ -186,9 +186,10 @@ h2 {
   height: 80px;
   padding-right: 15px;
   bottom: 50%;
-  transition: background .7s ease;
   width: 50px;
   margin-right: 16px;
+  transition: color 0.5s ease;
+
 }
 .small-social-media {
   width: 200px;
@@ -200,6 +201,8 @@ h2 {
 .small-social-media a i {
   color: #6A9FC9;
   padding: 0px 5px 0px 5px;
+  transition: color 0.5s ease;
+
 }
 .small-social-media a i:hover {
   color: #C34A80;
@@ -230,7 +233,6 @@ h2 {
 
 .skills {
   display: block;
-  background-color: #F5D773;
   font-size: 16px;
   letter-spacing: 1px;
   text-align: center;
@@ -278,15 +280,20 @@ h2 {
   padding-top: 30px;
 }
 #slide1 .skills {
-  background-color: #F5D773;
+  color: #6A9FC9;
+  background-color: #224687;
   letter-spacing: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
 .skills-row {
-  margin-top: 45px;
+  margin-top: 71px;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.skills-row p a {
+  cursor: default;
 }
 
 .contact {
@@ -294,15 +301,19 @@ h2 {
 }
 
 .how {
+  margin-top: 100px;
   display: inline-block;
   line-height: 1.1;
   letter-spacing: 0px;
   font-size: 16px;
+  background-color: #6A9FC9;
 }
 
 .design-row {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
+
 
 /* Custom container
 **/
@@ -318,31 +329,26 @@ h2 {
 
 }
 
-.project-title {
-  position: relative;
-  margin-top: 165px;
-  margin-left: 5px;
-  font-size: 16px;
-}
-
 .portfolio{
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  width: 100%;
+  border-bottom:1px solid white;
 }
 
+.project-title {
+  border-bottom: 1px dotted white;
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
 .project {
-  position: absolute;
-  width:300px;
-  height: 188px;
-  z-index:11;
-  -webkit-transition: all .2s ease-in-out;
-  vertical-align: bottom;
-  color: transparent;
+  width: 300px;
   cursor: pointer;
 }
 
 .project:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: #E49F27;
 }
 
 .modal-content {

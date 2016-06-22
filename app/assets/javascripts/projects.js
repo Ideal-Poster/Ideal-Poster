@@ -1,14 +1,10 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
-
-
-
-
 jQuery(document).ready(function ($) {
   $('.horizontal-form').validate();
-  $('.pageselectcolor').css('color', 'white');
-  $('.home, .nav-right i').css('color', '#6A9FC9');
+  $('.pageselectcolor, .nav-right i').css('color', '#6A9FC9');
+  $('.home').css('color', '#C34A80');
 
 //angularjs
   angular.module('Ideal_Poster', [])
@@ -30,18 +26,9 @@ jQuery(document).ready(function ($) {
     me.waypoint(function (direction){
       if (direction == 'down') {
         me.addClass('js-me-animate');
-      } else {
-        me.removeClass('js-me-animate');
       }
-    }, { offset: '90%'});
-    me = $('.me');
-    me.waypoint(function (direction){
-      if (direction == 'down') {
-        me.removeClass('js-me-animate');
-      }  else {
-        me.addClass('js-me-animate');
-      }
-    }, { offset: '1%'});
+    }, { offset: '100%'});
+
     slide.waypoint(function (direction) {
       dataslide = $(this).attr('data-slide');
       if (direction === 'up') {
